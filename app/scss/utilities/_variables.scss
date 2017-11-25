@@ -1,9 +1,9 @@
 /// Text setup
 $text: (
-        body: unquote("'Merriweather', serif"),
+        body: ('Boogaloo', cursive),
         body-weight: 400,
-        headline: unquote("'Oswald', 'Helvetica Neue', Arial, sans-serif"),
-        headline-weight: 400
+        headline: ('Great Vibes', cursive),
+        headline-weight: 600,
     )
     !default;
 

@@ -13,3 +13,10 @@
         @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. " + "Available breakpoints are: #{map-keys($breakpoints)}.";
     }
 }
+
+// Center content
+@mixin center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

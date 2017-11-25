@@ -1,0 +1,20 @@
+nav {
+    .navbar-brand {
+        padding: 5px;
+        @include center-content;
+
+        /* Brand image */
+        .brand-img {
+            float: left;
+            height: 100%;
+        }
+
+        /* Brand name */
+        .brand-name {
+            font-family: map-get($text, headline);
+            font-weight: map-get($text, headline-weight);
+            font-size: 1.2em;
+            padding: 0px 10px;
+        }
+    }
+}
