@@ -9,8 +9,8 @@ $text: (
 
 /// COLORS map
 $color: (
-        main: #24d4a0,
-        accent1: #ffd166,
+        main: rgb(89, 152, 50),
+        accent1: #d89400,
         accent2: red,
         accent3: #1d8aaf,
         accent4: #0a3a4a,
@@ -24,7 +24,10 @@ $color: (
 /// Color def map for page-layout using color map
 $color-defs: (
         body: map-get($color, main),
-        body-text: map-get($color, main),
+        body-text: map-get($color, dark),
+
+        selection: map-get($color, main),
+        selection-text: map-get($color, bright),
 
         header: map-get($color, bright),
         header-text: map-get($color, dark),

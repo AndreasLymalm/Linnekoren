@@ -9,6 +9,7 @@ var imagemin = require('gulp-imagemin');
 var cache = require('gulp-cache');
 var del = require('del');
 var runSequence = require('run-sequence');
+var shtml = require('gulp-shtml');
 
 // Basic Gulp task syntax
 gulp.task('hello', function() {
@@ -36,10 +37,20 @@ gulp.task('sass', function() {
     }));
 })
 
-// Watchers
+// Compiles all shtml-files. 
+gulp.task('shtml', function() {
+  gulp.src('app/html/*.html', {base: 'app/html'})
+   .pipe(shtml({
+     wwwroot: 'app/html'
+   }))
+   .pipe(gulp.dest('app'));
+});
+
+// Watchers, knows when a file changes.
 gulp.task('watch', function() {
   gulp.watch('app/scss/**/*.scss', ['sass']);
-  gulp.watch('app/*.html', browserSync.reload);
+  gulp.watch('app/html/*.html', ['shtml', browserSync.reload]);
+  gulp.watch('app/html/shtml/*.shtml', ['shtml', browserSync.reload]);
   gulp.watch('app/js/**/*.js', browserSync.reload);
 })
 
@@ -48,7 +59,6 @@ gulp.task('watch', function() {
 
 // Optimizing CSS and JavaScript 
 gulp.task('useref', function() {
-
   return gulp.src('app/*.html')
     .pipe(useref())
     .pipe(gulpIf('*.js', uglify()))
@@ -87,7 +97,7 @@ gulp.task('clean:dist', function() {
 // ---------------
 
 gulp.task('default', function(callback) {
-  runSequence(['sass', 'browserSync'], 'watch',
+  runSequence(['shtml','sass', 'browserSync'], 'watch',
     callback
   )
 })
@@ -95,6 +105,7 @@ gulp.task('default', function(callback) {
 gulp.task('build', function(callback) {
   runSequence(
     'clean:dist',
+    'shtml',
     'sass',
     ['useref', 'images', 'fonts'],
     callback

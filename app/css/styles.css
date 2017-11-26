@@ -6217,13 +6217,19 @@ button.close {
 
 /* Body styling */
 body {
+  color: #282828;
   font-family: "Boogaloo", cursive;
   /* Push down site content for fixed navbar */
   padding-top: 75px; }
 
+::selection {
+  background: #599832;
+  color: #f5f5f5; }
+
 /* Remove underline on links */
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #282828; }
 
 /* Remove list bullets */
 ul {
@@ -6249,7 +6255,15 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   background: #282828;
   color: #f5f5f5;
   /* Hack: footer takes rest of page */
   box-shadow: 0px 500px 0px 500px #282828; }
+  footer .footer-text {
+    font-size: 2em; }
+  footer .fa {
+    font-size: 3em;
+    color: #f5f5f5; }
+  footer .credits {
+    padding-top: 2em; }

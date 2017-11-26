@@ -6,15 +6,21 @@
 /* Body styling */
 body {
     //background: map-get($color-defs, body);
-    //color: map-get($color-defs, body-text);
+    color: map-get($color-defs, body-text);
     font-family: map-get($text, body);
     /* Push down site content for fixed navbar */
     padding-top: 75px;
 }
 
+::selection {
+    background: map-get($color-defs, selection);
+    color: map-get($color-defs, selection-text);
+}
+
 /* Remove underline on links */
 a {
     text-decoration: none;
+    color: map-get($color-defs, body-text);
 }
 
 /* Remove list bullets */

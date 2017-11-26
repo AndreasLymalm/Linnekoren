@@ -1,7 +1,21 @@
 footer {
     @include center-content;
+    flex-direction: column;
     background: map-get($color-defs, footer);
     color: map-get($color-defs, footer-text);
     /* Hack: footer takes rest of page */
     box-shadow: 0px 500px 0px 500px map-get($color-defs, footer);
+
+    .footer-text {
+        font-size: 2em;
+    }
+
+    .fa {
+        font-size: 3em;
+        color: map-get($color-defs, footer-text);
+    }
+
+    .credits {
+        padding-top: 2em;
+    }
 }
