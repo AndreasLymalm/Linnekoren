@@ -12,6 +12,7 @@ body {
     padding-top: 75px;
 }
 
+/* Color when user selects text */
 ::selection {
     background: map-get($color-defs, selection);
     color: map-get($color-defs, selection-text);
