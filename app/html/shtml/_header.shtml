@@ -20,8 +20,8 @@
             <!-- Menu -->
             <div class="collapse navbar-collapse" id="main-nav">
                 <ul class="nav navbar-nav">
-                    <li class="active">
-                        <a href="#">Välkommen!</a>
+                    <li>
+                        <a href="index.html">Välkommen!</a>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Om kören
@@ -31,18 +31,9 @@
                             <li>
                                 <a href="koren.html">Kören</a>
                             </li>
-                            <li role="separator" class="divider"></li>
-                            <div class="dropdown-header">Våra körledare</div>
                             <li>
-                                <a href="sofia_dahlen.html">Sofia Dahlén (2017-)</a>
+                                <a href="korledare.html">Körledarna</a>
                             </li>
-                            <li>
-                                <a href="frida_johansson.html">Frida Johansson (2014-2017)</a>
-                            </li>
-                            <li>
-                                <a href="magnus_jarvelid.html">Magnus Järvelid (2013-2014)</a>
-                            </li>
-                            <li role="separator" class="divider"></li>
                             <li>
                                 <a href="sponsorer.html">Sponsorer</a>
                             </li>
