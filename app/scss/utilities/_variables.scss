@@ -4,6 +4,7 @@ $text: (
         body-weight: 400,
         headline: ('Great Vibes', cursive),
         headline-weight: 600,
+        e-mail: ('VT323', monospace),
     )
     !default;
 
@@ -17,7 +18,7 @@ $color: (
         dark: #282828,
         gray: #e1e1e1,
         darkgrey: #666,
-        bright: #f5f5f5
+        bright: #f8f8f8
     )
     !default;
 
@@ -25,6 +26,9 @@ $color: (
 $color-defs: (
         body: map-get($color, main),
         body-text: map-get($color, dark),
+
+        main: map-get($color, bright),
+        heading-background: map-get($color, main),
 
         selection: map-get($color, main),
         selection-text: map-get($color, bright),

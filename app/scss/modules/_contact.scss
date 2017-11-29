@@ -1,0 +1,67 @@
+#contact {
+    p, table {
+        font-size: 1.2em;
+    }
+
+    .contact-entity {
+        .contact-name {
+            font-size: 3em;
+        }
+
+        .e-mail {
+            display: inline-block;
+            padding: 1em;
+            border-radius: 16px;
+            background: map-get($color-defs, button-default);
+            color: map-get($color-defs, button-default-text);
+            font-size: 2em;
+        }
+    }
+
+    #board {
+        #board-members {
+            padding-top: 1em;
+
+            figure {
+                padding-bottom: 1em;
+
+                small {
+                    display: inline-block;
+                    padding: 2px;
+                    border-radius: 5px;
+                    font-size: 11px;
+                    background: map-get($color-defs, button-default);
+                    color: map-get($color-defs, button-default-text);
+                }
+            }
+        }
+    }
+
+    #other-contact {
+        a {
+            text-decoration: none;
+            display: inline-block;
+            padding-right: 1em;
+
+            &.facebook-link {
+                color: #3b5998;
+
+                &:hover {
+                    text-shadow: 1px 1px 5px #3b5998;
+                }
+            }
+
+            &.instagram-link {
+                color: #cd486b;
+
+                &:hover {
+                    text-shadow: 1px 1px 5px #cd486b;
+                }
+            }
+        }
+
+        .fa {
+            font-size: 3em;
+        }
+    }
+}

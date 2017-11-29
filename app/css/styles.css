@@ -2,7 +2,7 @@
 /* SETTINGS AND FUNCTIONS */
 /* Functions */
 /* Placeholders and classes */
-@import url("https://fonts.googleapis.com/css?family=Boogaloo|Great+Vibes");
+@import url("https://fonts.googleapis.com/css?family=Boogaloo|Great+Vibes|VT323");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 /* Basic initial settings */
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
@@ -6217,15 +6217,17 @@ button.close {
 
 /* Body styling */
 body {
+  background: #599832;
   color: #282828;
   font-family: "Boogaloo", cursive;
+  font-weight: 400;
   /* Push down site content for fixed navbar */
   padding-top: 75px; }
 
 /* Color when user selects text */
 ::selection {
   background: #599832;
-  color: #f5f5f5; }
+  color: #f8f8f8; }
 
 /* Remove underline on links */
 a {
@@ -6235,6 +6237,25 @@ a {
 /* Remove list bullets */
 ul {
   list-style-type: none; }
+
+/* Main styling */
+main {
+  padding: 1em;
+  margin-bottom: 1em;
+  background: #f8f8f8;
+  border-radius: 5px; }
+
+/* E-mail formatting */
+.e-mail {
+  font-family: "VT323", monospace; }
+
+h1, h2 {
+  font-family: "Great Vibes", cursive;
+  font-weight: 600;
+  text-shadow: 1px 1px 10px #599832; }
+
+h3 {
+  font-weight: 800; }
 
 nav .navbar-brand {
   padding: 5px;
@@ -6258,13 +6279,68 @@ footer {
   align-items: center;
   flex-direction: column;
   background: #282828;
-  color: #f5f5f5;
+  color: #f8f8f8;
   /* Hack: footer takes rest of page */
   box-shadow: 0px 500px 0px 500px #282828; }
   footer .footer-text {
     font-size: 2em; }
-  footer .fa {
-    font-size: 3em;
-    color: #f5f5f5; }
+  footer .social-icons a {
+    padding: 0 1em; }
+    footer .social-icons a .fa {
+      font-size: 3em;
+      color: #f8f8f8; }
+    footer .social-icons a:hover {
+      text-shadow: 1px 1px 10px #f8f8f8; }
   footer .credits {
     padding-top: 2em; }
+
+#contact p, #contact table {
+  font-size: 1.2em; }
+
+#contact .contact-entity .contact-name {
+  font-size: 3em; }
+
+#contact .contact-entity .e-mail {
+  display: inline-block;
+  padding: 1em;
+  border-radius: 16px;
+  background: #599832;
+  color: #f8f8f8;
+  font-size: 2em; }
+
+#contact #board #board-members {
+  padding-top: 1em; }
+  #contact #board #board-members figure {
+    padding-bottom: 1em; }
+    #contact #board #board-members figure small {
+      display: inline-block;
+      padding: 2px;
+      border-radius: 5px;
+      font-size: 11px;
+      background: #599832;
+      color: #f8f8f8; }
+
+#contact #other-contact a {
+  text-decoration: none;
+  display: inline-block;
+  padding-right: 1em; }
+  #contact #other-contact a.facebook-link {
+    color: #3b5998; }
+    #contact #other-contact a.facebook-link:hover {
+      text-shadow: 1px 1px 5px #3b5998; }
+  #contact #other-contact a.instagram-link {
+    color: #cd486b; }
+    #contact #other-contact a.instagram-link:hover {
+      text-shadow: 1px 1px 5px #cd486b; }
+
+#contact #other-contact .fa {
+  font-size: 3em; }
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: baseline; }
+  .heading svg {
+    filter: drop-shadow(0px 0px 3px #599832); }
+  .heading h2 {
+    margin: 1em; }

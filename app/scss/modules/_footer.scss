@@ -10,9 +10,19 @@ footer {
         font-size: 2em;
     }
 
-    .fa {
-        font-size: 3em;
-        color: map-get($color-defs, footer-text);
+    .social-icons {
+        a {
+            padding: 0 1em;
+
+            .fa {
+                font-size: 3em;
+                color: map-get($color-defs, footer-text);
+            }
+
+            &:hover {
+                text-shadow: 1px 1px 10px map-get($color-defs, footer-text);
+            }
+        }
     }
 
     .credits {
