@@ -11,20 +11,21 @@ $text: (
 /// COLORS map
 $color: (
         main: rgb(89, 152, 50),
-        accent1: #d89400,
+        accent1: rgb(51, 103, 13),
         accent2: red,
         accent3: #1d8aaf,
         accent4: #0a3a4a,
+
         dark: #282828,
-        gray: #e1e1e1,
         darkgrey: #666,
+        grey: #cbcbcb,
         bright: #f8f8f8
     )
     !default;
 
 /// Color def map for page-layout using color map
 $color-defs: (
-        body: map-get($color, main),
+        body: map-get($color, grey),
         body-text: map-get($color, dark),
 
         main: map-get($color, bright),
