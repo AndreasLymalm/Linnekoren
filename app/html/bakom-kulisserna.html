@@ -16,6 +16,19 @@
 
 <body>
 
+    <!-- Firebase database -->
+    <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase-database.js"></script>
+    <script>
+        var config = {
+            apiKey: "<DIN_API_NYCKEL>",
+            authDomain: "<DITT_APP_NAMN>.firebaseapp.com",
+            databaseURL: "https://<DITT_APP_NAMN>.firebaseio.com",
+        };
+        firebase.initializeApp(config);
+    </script>
+
     <!--
         HEADER
     -->
@@ -39,7 +52,7 @@
         MAIN CONTENT
     -->
     <div class="container">
-        <main id="contact">
+        <main id="behind-the-scenes-page">
 
         </main>
     </div>

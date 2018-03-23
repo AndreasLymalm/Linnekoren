@@ -1,6 +1,6 @@
 /// Text setup
 $text: (
-        body: ('Boogaloo', cursive),
+        body: ('Dosis', sans-serif),
         body-weight: 400,
         headline: ('Great Vibes', cursive),
         headline-weight: 600,
@@ -11,6 +11,7 @@ $text: (
 /// COLORS map
 $color: (
         main: rgb(89, 152, 50),
+        main-transparency: rgba(89, 152, 50, 0.7),
         accent1: rgb(51, 103, 13),
         accent2: red,
         accent3: #1d8aaf,
@@ -19,7 +20,8 @@ $color: (
         dark: #282828,
         darkgrey: #666,
         grey: #cbcbcb,
-        bright: #f8f8f8
+        bright: rgb(248, 248, 248),
+        bright-transparency: rgba(248, 248, 248, 0.5),
     )
     !default;
 

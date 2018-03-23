@@ -2,7 +2,7 @@
 /* SETTINGS AND FUNCTIONS */
 /* Functions */
 /* Placeholders and classes */
-@import url("https://fonts.googleapis.com/css?family=Boogaloo|Great+Vibes|VT323");
+@import url("https://fonts.googleapis.com/css?family=Dosis:300|Great+Vibes|VT323");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 /* Basic initial settings */
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
@@ -6219,7 +6219,7 @@ button.close {
 body {
   background: #cbcbcb;
   color: #282828;
-  font-family: "Boogaloo", cursive;
+  font-family: "Dosis", sans-serif;
   font-weight: 400;
   /* Push down site content for fixed navbar */
   padding-top: 75px; }
@@ -6283,6 +6283,8 @@ footer {
   flex-direction: column;
   background: #282828;
   color: #f8f8f8;
+  padding-top: 1em;
+  margin-top: 1em;
   /* Hack: footer takes rest of page */
   box-shadow: 0px 500px 0px 500px #282828; }
   footer .footer-text {
@@ -6297,10 +6299,10 @@ footer {
   footer .credits {
     padding-top: 2em; }
 
-#contact .contact-entity .contact-name {
+#contact-page .contact-entity .contact-name {
   font-size: 3em; }
 
-#contact .contact-entity .e-mail {
+#contact-page .contact-entity .e-mail {
   display: inline-block;
   padding: 1em;
   border-radius: 16px;
@@ -6308,11 +6310,11 @@ footer {
   color: #f8f8f8;
   font-size: 2em; }
 
-#contact #board #board-members {
+#contact-page #board #board-members {
   padding-top: 1em; }
-  #contact #board #board-members figure {
+  #contact-page #board #board-members figure {
     padding-bottom: 1em; }
-    #contact #board #board-members figure small {
+    #contact-page #board #board-members figure small {
       display: inline-block;
       padding: 2px;
       border-radius: 5px;
@@ -6320,32 +6322,84 @@ footer {
       background: #599832;
       color: #f8f8f8; }
 
-#contact #other-contact a {
+#contact-page #other-contact a {
   text-decoration: none;
   display: inline-block;
   padding-right: 1em; }
-  #contact #other-contact a.facebook-link {
+  #contact-page #other-contact a.facebook-link {
     color: #3b5998; }
-    #contact #other-contact a.facebook-link:hover {
+    #contact-page #other-contact a.facebook-link:hover {
       text-shadow: 1px 1px 5px #3b5998; }
-  #contact #other-contact a.instagram-link {
+  #contact-page #other-contact a.instagram-link {
     color: #cd486b; }
-    #contact #other-contact a.instagram-link:hover {
+    #contact-page #other-contact a.instagram-link:hover {
       text-shadow: 1px 1px 5px #cd486b; }
 
-#contact #other-contact .fa {
+#contact-page #other-contact .fa {
   font-size: 3em; }
 
 .heading {
   display: flex;
   justify-content: center;
-  align-items: baseline; }
+  align-items: center; }
   .heading svg {
     filter: drop-shadow(0px 0px 3px #599832); }
   .heading h2 {
+    flex-shrink: 0;
+    text-align: center;
     margin: 1em; }
 
-#sponsors .row {
+#sponsors-page .row {
   margin: 0 1em; }
-  #sponsors .row img {
+  #sponsors-page .row img {
     margin: 1em 0; }
+
+#conductors-specific-page blockquote {
+  margin-left: 1em; }
+
+#conductors-specific-page .conductor-header {
+  background: #599832;
+  display: grid;
+  grid-template-columns: auto 300px auto;
+  grid-template-rows: 300px;
+  align-items: end;
+  justify-items: center;
+  margin-bottom: 1em;
+  padding: 1em; }
+  #conductors-specific-page .conductor-header img {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    height: 300px;
+    width: 300px;
+    filter: grayscale(100%) drop-shadow(10px 10px 5px); }
+  #conductors-specific-page .conductor-header h3 {
+    z-index: 1;
+    background: rgba(89, 152, 50, 0.7);
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    font-size: 3em;
+    text-align: center; }
+    #conductors-specific-page .conductor-header h3 .h3-subtitle {
+      color: #f8f8f8;
+      display: block;
+      margin-top: 4px; }
+
+#conductors-specific-page h4 {
+  font-size: 25px; }
+
+#conductors-specific-page .musical-background li {
+  font-size: 20px;
+  margin-bottom: 10px; }
+  #conductors-specific-page .musical-background li::before {
+    background-image: url("../images/music-note-green.png");
+    background-size: 20px 20px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    content: "";
+    margin-right: 5px; }
+
+#conductors-page .panel .panel-body {
+  padding: 0; }
+  #conductors-page .panel .panel-body img {
+    width: 100%; }

@@ -24,6 +24,7 @@
   "dependencies": {
     "browser-sync": "2.18.13",
     "del": "3.0.0",
+    "firebase": "^4.10.0",
     "gulp": "3.9.1",
     "gulp-cache": "0.4.6",
     "gulp-cssnano": "2.1.2",
