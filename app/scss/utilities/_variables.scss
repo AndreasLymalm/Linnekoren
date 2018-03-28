@@ -52,7 +52,7 @@ $color-defs: (
 
 /// Breakpoint map
 $breakpoints: (
-        "small": (min-width: 40em),
+        "small": (min-width: 400px),
         "medium": (min-width: 48em),
         "large": (min-width: 62em),
         "wide": (min-width: 75em)

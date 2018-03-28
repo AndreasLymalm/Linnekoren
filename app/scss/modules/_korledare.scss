@@ -8,26 +8,35 @@
 
     .conductor-header {
         background: map-get($color, main);
-        display: grid;
-        grid-template-columns: auto $img-size auto;
-        grid-template-rows: $img-size;
-        align-items: end;
-        justify-items: center;
         margin-bottom: 1em;
-        padding: 1em;
+        display: block;
+        padding: 5px;
+        
+        @include respond-to("small"){
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: $img-size;
+            align-items: end;
+            justify-items: center;
+            padding: 1em;
+        }
 
         img {
-            grid-column: 2 / 3;
-            grid-row: 1 / 2;
-            height: $img-size;
-            width: $img-size;
-            filter: grayscale(100%) drop-shadow(10px 10px 5px);
+            filter: grayscale(100%);
+            @include respond-to("small"){
+                filter: grayscale(100%) drop-shadow(10px 10px 5px);
+                grid-column: 1 / 2;
+                grid-row: 1 / 2;
+            }
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
         }
 
         h3 {
             z-index: 1;
             background: map-get($color, main-transparency);
-            grid-column: 2 / 3;
+            grid-column: 1 / 2;
             grid-row: 1 / 2;
 
             font-size: 3em;
