@@ -11,7 +11,10 @@
             border-radius: 16px;
             background: map-get($color-defs, button-default);
             color: map-get($color-defs, button-default-text);
-            font-size: 2em;
+            font-size: 1.5em;
+            @include respond-to("small"){
+                font-size: 2em;
+            }
         }
     }
 
