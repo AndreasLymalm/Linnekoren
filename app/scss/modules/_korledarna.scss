@@ -21,20 +21,31 @@
                 .read-more-about-conductor {
                     color: map-get($color, bright);
                     background: map-get($color, main);
-                    padding: 5px 10px;
+                    padding: 5px 15px;
                     border-radius: 1em;
                     font-size: 1.5em;
                     font-weight: 800;
                     position: absolute;
-                    bottom: 5px;
+                    bottom: 10px;
                     left: 50%;
                     transform: translateX(-50%);
                 }
             }
         }
 
-        // On desktop
+        // On larger screens
         @include respond-to("small"){
+            .panel-body {
+                .overlay {
+                    .read-more-about-conductor {
+                        font-size: 2em;
+                    }
+                }
+            }
+        }
+
+        // On desktop
+        @include respond-to("large"){
 
             .panel-body {
     

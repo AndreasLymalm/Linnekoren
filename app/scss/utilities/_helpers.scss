@@ -1,2 +1,8 @@
 /* Placeholders and classes */
 
+%e-mail {
+    display: inline-block;
+    border-radius: 16px;
+    background: map-get($color-defs, button-default);
+    color: map-get($color-defs, button-default-text);
+}

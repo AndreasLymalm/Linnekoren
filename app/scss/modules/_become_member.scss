@@ -1,6 +1,7 @@
-#become-member {
+#become-member-page {
 
-    #why {
-        
+    .e-mail {
+        @extend %e-mail;
+        padding: .5em;
     }
 }

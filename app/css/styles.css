@@ -4,6 +4,12 @@
 /* Placeholders and classes */
 @import url("https://fonts.googleapis.com/css?family=Dosis:300|Great+Vibes|VT323");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+#contact-page .contact-entity .e-mail, #become-member-page .e-mail {
+  display: inline-block;
+  border-radius: 16px;
+  background: #599832;
+  color: #f8f8f8; }
+
 /* Basic initial settings */
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -6303,11 +6309,7 @@ footer {
   font-size: 3em; }
 
 #contact-page .contact-entity .e-mail {
-  display: inline-block;
   padding: 1em;
-  border-radius: 16px;
-  background: #599832;
-  color: #f8f8f8;
   font-size: 1.5em; }
   @media (min-width: 400px) {
     #contact-page .contact-entity .e-mail {
@@ -6356,6 +6358,9 @@ footer {
   margin: 0 1em; }
   #sponsors-page .row img {
     margin: 1em 0; }
+
+#become-member-page .e-mail {
+  padding: .5em; }
 
 #conductors-specific-page blockquote {
   margin-left: 1em; }
@@ -6426,16 +6431,20 @@ footer {
     #conductors-page .panel .panel-body .overlay .read-more-about-conductor {
       color: #f8f8f8;
       background: #599832;
-      padding: 5px 10px;
+      padding: 5px 15px;
       border-radius: 1em;
       font-size: 1.5em;
       font-weight: 800;
       position: absolute;
-      bottom: 5px;
+      bottom: 10px;
       left: 50%;
       transform: translateX(-50%); }
 
 @media (min-width: 400px) {
+  #conductors-page .panel .panel-body .overlay .read-more-about-conductor {
+    font-size: 2em; } }
+
+@media (min-width: 62em) {
   #conductors-page .panel .panel-body .overlay {
     background: #599832;
     opacity: 0;
