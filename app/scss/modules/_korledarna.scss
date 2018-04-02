@@ -1,11 +1,64 @@
 #conductors-page {
     .panel {
+
         .panel-body {
             padding: 0;
+            position: relative;
 
             img {
                 width: 100%;
             }
+
+            .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+
+                .read-more-about-conductor {
+                    color: map-get($color, bright);
+                    background: map-get($color, main);
+                    padding: 5px 10px;
+                    border-radius: 1em;
+                    font-size: 1.5em;
+                    font-weight: 800;
+                    position: absolute;
+                    bottom: 5px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+
+        // On desktop
+        @include respond-to("small"){
+
+            .panel-body {
+    
+                .overlay {
+                    background: map-get($color, main);
+                    opacity: 0;
+                    transition: .5s ease;
+    
+                    .read-more-about-conductor {
+                        background: none;
+                        font-size: 2em;
+                        top: 50%;
+                        bottom: initial;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+            }
+
+            // Creates hover effect
+            &:hover .overlay {
+                opacity: .8;
+            }
+
         }
     }
 }

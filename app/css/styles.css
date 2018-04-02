@@ -6411,6 +6411,77 @@ footer {
     margin-right: 5px; }
 
 #conductors-page .panel .panel-body {
-  padding: 0; }
+  padding: 0;
+  position: relative; }
   #conductors-page .panel .panel-body img {
     width: 100%; }
+  #conductors-page .panel .panel-body .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%; }
+    #conductors-page .panel .panel-body .overlay .read-more-about-conductor {
+      color: #f8f8f8;
+      background: #599832;
+      padding: 5px 10px;
+      border-radius: 1em;
+      font-size: 1.5em;
+      font-weight: 800;
+      position: absolute;
+      bottom: 5px;
+      left: 50%;
+      transform: translateX(-50%); }
+
+@media (min-width: 400px) {
+  #conductors-page .panel .panel-body .overlay {
+    background: #599832;
+    opacity: 0;
+    transition: .5s ease; }
+    #conductors-page .panel .panel-body .overlay .read-more-about-conductor {
+      background: none;
+      font-size: 2em;
+      top: 50%;
+      bottom: initial;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+  #conductors-page .panel:hover .overlay {
+    opacity: .8; } }
+
+#welcome-page #welcome-message {
+  background: #cbcbcb;
+  margin: -1em -1em 0;
+  padding-bottom: 1em;
+  border-radius: 5px 5px 0 0; }
+  #welcome-page #welcome-message img {
+    width: 200px;
+    display: block;
+    margin: 0 auto; }
+  #welcome-page #welcome-message h1 {
+    text-align: center; }
+
+#welcome-page .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  @media (min-width: 48em) {
+    #welcome-page .content {
+      flex-direction: row; }
+      #welcome-page .content #calendar {
+        width: 28%;
+        order: 1; }
+      #welcome-page .content #happenings {
+        width: 70%; } }
+  #welcome-page .content #calendar table tr.passed-event {
+    background: #cbcbcb; }
+  #welcome-page .content #calendar table tr .date {
+    width: 50px; }
+  #welcome-page .content #calendar table tr .time {
+    width: 50px; }
+
+#choir-page img {
+  border-radius: 10px;
+  margin: 1em 0;
+  filter: brightness(120%) grayscale(20%); }

@@ -1,0 +1,72 @@
+#welcome-page {
+    #welcome-message {
+        background: map-get($color, gray);
+        margin: -1em -1em 0;
+        padding-bottom: 1em;
+        border-radius: 5px 5px 0 0;
+
+        // Logotype image
+        img {
+            width: 200px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        // Brand name
+        h1 {
+            text-align: center;
+        }
+    }
+
+    // Main content
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @include respond-to("medium"){
+            flex-direction: row;
+
+            #calendar {
+                width: 28%;
+                order: 1;
+            }
+
+            #happenings {
+                width: 70%;
+            }
+        }
+
+        // Calendar
+        #calendar {
+            table {
+                tr {
+                    td {
+                    }
+        
+                    &.passed-event {
+                        background: map-get($color, grey);
+                    }
+        
+                    .date {
+                        width: 50px;
+                    }
+            
+                    .time {
+                        width: 50px;
+                    }
+            
+                    .event {
+            
+                    }
+                }
+            }
+        }
+
+        // Happenings
+        #happenings {
+
+        }
+    }
+    
+}
