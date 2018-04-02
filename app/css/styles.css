@@ -6456,16 +6456,13 @@ footer {
       left: 50%;
       transform: translateX(-50%); } }
 
-#welcome-page #welcome-message {
-  background: #cbcbcb;
-  margin: -1em -1em 0;
-  padding-bottom: 1em;
-  border-radius: 5px 5px 0 0; }
-  #welcome-page #welcome-message img {
+#welcome-message {
+  padding-bottom: 1em; }
+  #welcome-message img {
     width: 200px;
     display: block;
     margin: 0 auto; }
-  #welcome-page #welcome-message h1 {
+  #welcome-message h1 {
     text-align: center; }
 
 #welcome-page .content {

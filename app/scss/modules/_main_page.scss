@@ -1,22 +1,21 @@
-#welcome-page {
-    #welcome-message {
-        background: map-get($color, gray);
-        margin: -1em -1em 0;
-        padding-bottom: 1em;
-        border-radius: 5px 5px 0 0;
 
-        // Logotype image
-        img {
-            width: 200px;
-            display: block;
-            margin: 0 auto;
-        }
+#welcome-message {
+    padding-bottom: 1em;
 
-        // Brand name
-        h1 {
-            text-align: center;
-        }
+    // Logotype image
+    img {
+        width: 200px;
+        display: block;
+        margin: 0 auto;
     }
+
+    // Brand name
+    h1 {
+        text-align: center;
+    }
+}
+
+#welcome-page {
 
     // Main content
     .content {
