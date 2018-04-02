@@ -28,22 +28,19 @@
             flex-direction: row;
 
             #calendar {
-                width: 28%;
+                width: 49%;
                 order: 1;
             }
 
             #happenings {
-                width: 70%;
+                width: 49%;
             }
         }
 
         // Calendar
         #calendar {
             table {
-                tr {
-                    td {
-                    }
-        
+                tr {        
                     &.passed-event {
                         background: map-get($color, grey);
                     }
@@ -55,10 +52,6 @@
                     .time {
                         width: 50px;
                     }
-            
-                    .event {
-            
-                    }
                 }
             }
         }
@@ -66,7 +59,15 @@
         // Happenings
         #happenings {
 
+            .facebook-feed {
+                width: 100%;
+                text-align: center;
+                .fb-page {
+                    margin: 0 auto;
+                }
+            }
         }
+
     }
     
 }

@@ -6470,16 +6470,21 @@ footer {
     #welcome-page .content {
       flex-direction: row; }
       #welcome-page .content #calendar {
-        width: 28%;
+        width: 49%;
         order: 1; }
       #welcome-page .content #happenings {
-        width: 70%; } }
+        width: 49%; } }
   #welcome-page .content #calendar table tr.passed-event {
     background: #cbcbcb; }
   #welcome-page .content #calendar table tr .date {
     width: 50px; }
   #welcome-page .content #calendar table tr .time {
     width: 50px; }
+  #welcome-page .content #happenings .facebook-feed {
+    width: 100%;
+    text-align: center; }
+    #welcome-page .content #happenings .facebook-feed .fb-page {
+      margin: 0 auto; }
 
 #choir-page img {
   border-radius: 10px;
