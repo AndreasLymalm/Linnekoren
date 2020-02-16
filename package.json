@@ -1,41 +1,49 @@
 {
-  "name": "evxfeh17_html_tenta",
-  "version": "1.0.0",
-  "description": "HTML CSS Tenta",
-  "main": "index.js",
+  "name": "linnekoren",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AndreasLymalm/EVXFEH17_Andreas_Lymalm.git"
-  },
-  "keywords": [
-    "tenta",
-    "html",
-    "css"
-  ],
-  "author": "Andreas Lymalm <andreas.lymalm@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/AndreasLymalm/EVXFEH17_Andreas_Lymalm/issues"
-  },
-  "homepage": "www.andreaslymalm.se",
   "dependencies": {
-    "browser-sync": "2.18.13",
-    "del": "3.0.0",
-    "firebase": "^4.10.0",
-    "gulp": "3.9.1",
-    "gulp-cache": "0.4.6",
-    "gulp-cssnano": "2.1.2",
-    "gulp-if": "2.0.2",
-    "gulp-imagemin": "3.4.0",
-    "gulp-sass": "3.1.0",
-    "gulp-uglify": "3.0.0",
-    "gulp-useref": "3.1.2",
-    "run-sequence": "2.2.0"
+    "bootstrap": "^4.4.1",
+    "bootstrap-vue": "^2.4.0",
+    "core-js": "^3.6.4",
+    "portal-vue": "^2.1.7",
+    "vue": "^2.6.11",
+    "vue-aplayer": "^1.6.1",
+    "vue-gallery": "^2.0.1",
+    "vue-headful": "^2.1.0"
   },
   "devDependencies": {
-    "gulp-shtml": "^1.1.4"
-  }
+    "@vue/cli-plugin-babel": "~4.2.0",
+    "@vue/cli-plugin-eslint": "~4.2.0",
+    "@vue/cli-service": "~4.2.0",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.1.2",
+    "sass": "^1.25.0",
+    "sass-loader": "^8.0.2",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
 }

@@ -1,0 +1,92 @@
+{
+    "frida-johansson": {
+        "name": "Frida Johansson",
+        "years": "2014-2017",
+        "quote": [
+            "När man är liten får man ofta frågan vad man vill bli när man blir stor. Svaren kan variera mycket och det tar många år innan man kommer på vad man vill göra, om man nu gör det.",
+            "Jag svarade ofta att jag inte visste men att jag gillade musik och det kanske är det jag vill hålla på med. Som svar på detta fick jag ofta \"Oj det är svårt, det finns inga jobb som musiker. Ska du inte skaffa dig ett riktigt jobb istället?\"",
+            "Jag är nu 22 år gammal och både studerar och jobbar som musiker på mer än heltid. Det finns inget annat jag hellre vill göra som kan ge mig ett sånt där \"riktigt\" jobb som alla pratar om."
+        ],
+        "questions": [
+            {
+                "question": "Vilka instrument spelar du?",
+                "answer": "Piano, Orgel, Cembalo och sång."
+            },
+            {
+                "question": "Har du några andra intressen än musik?",
+                "answer": "Jag har hållit på med skytte i många år men slutade när jag flyttade till Växjö. Jag hoppas kunna ta upp det snart igen!"
+            },
+            {
+                "question": "Vad är det bästa med att leda kör?",
+                "answer": "Att människor med så olika bakgrund kan lägga allt det åt sidan och tillsammans skapa musik som kan beröra folk. Mötet mellan människan och musik har alltid varit en fascination för mig."
+            },
+            {
+                "question": "Vilka körer har du sjungit i?",
+                "answer": "Trollhättans Kammarkör, Trollhättans Motettkör, Shine Gospel, Diskantkören Kvint, Flickkören Kvint, Södra Vätterbygdens folkhögskolas kör och S:t Sigfrids folkhögskolas kör."
+            },
+            {
+                "question": "Om du hade en superkraft, vilken skulle du ha då?",
+                "answer": "Att kunna andas under vatten måste vara en häftig sak att kunna!"
+            }
+        ],
+        "musicalHistory": [
+            {
+                "what": "Estetiska programmet musik",
+                "where": "Magnus Åbergsgymnasiet, Trollhättan"
+            },
+            {
+                "what": "Församlingsmusiker",
+                "where": "Södra Vätterbygdens folkhögskola, Jönköping"
+            },
+            {
+                "what": "Kompositionslinjen",
+                "where": "S:t Sigfrids folkhögskola, Växjö"
+            }
+        ]
+    },
+    "magnus-jarvelid": {
+        "name": "Magnus Järvelid",
+        "years": "2013-2014",
+        "quote": [
+            "Efter att tidigare ha lett en annan studentkör i Växjö fram till hösten 2013, valde jag att istället grunda Linnékören med en annan musikalisk inriktning, vision, och arbetssätt. Min vision var att skapa en studentkör med en tydlig och målinriktad projektform som arbetssätt, som strävar efter en mångfald i musikalisk bredd och spännande samarbeten.",
+            "Linnékören skall inte fastna i ett visst fack tänkte jag, utan varje projekt är ett nytt blad som kan ta en helt annan musikalisk väg än det föregående. Under min tid som ledare för Linnékören genomförde vi under min ledning projekten Vocal Rock och Vivat Academia, varav det senare var ett gemensamt projekt tillsammans med Malmö Studentkör.",
+            "Hösten 2014 flyttade jag till Tyskland och lämnade därför över pinnen till nästa körledare för Linnékören, Frida Johansson."
+        ],
+        "questions": [
+            {
+                "question": "Vilka instrument spelar du?",
+                "answer": "Orgel, piano, och körsångare."
+            },
+            {
+                "question": "Har du några andra intressen än musik?",
+                "answer": "Jag brinner för entreprenörskap och företagande! Logistik, som jag driver företag inom, är himla roligt!"
+            },
+            {
+                "question": "Vad är det bästa med att leda kör?",
+                "answer": "Allt? Men i synnerhet att få förmånen att se hur det man skapar tillsammans utvecklas, tack vare var och ens engagemang! Körsång skapar en gemenskap och stämning som är väldigt speciellt och som jag inte tror man hittar motsvarigheter till på många håll!"
+            },
+            {
+                "question": "Vilka körer har du sjungit i?",
+                "answer": "Växjö Vocalis, Teleborgs kyrkokör, Brygghuskören, samt Upplands Väsbys musikklasser."
+            },
+            {
+                "question": "Om du hade en superkraft, vilken skulle du ha då?",
+                "answer": "Får nog fundera lite på detta."
+            }
+        ],
+        "musicalHistory": [
+            {
+                "what": "Kördirigering I och II",
+                "where": "Lunds universitet"
+            },
+            {
+                "what": "Förberedande kantorsutbildning",
+                "where": "Ersta Sköndals högskola"
+            },
+            {
+                "what": "Fristående kurser i bland annat brukspiano och röstlära",
+                "where": "Linnéuniversitetet i Växjö"
+            }
+        ]
+    }
+}

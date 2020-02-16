@@ -1,0 +1,29 @@
+{
+    "conductor": "Shu Tabira",
+    "board": [
+        {
+            "position": "Ordförande",
+            "name": "Max Winqvist"
+        },
+        {
+            "position": "Ekonomiansvarig",
+            "name": "Anders Hedbrant"
+        },
+        {
+            "position": "Sekreterare",
+            "name": "FN EN"
+        },
+        {
+            "position": "Ledamot",
+            "name": "FN EN"
+        },
+        {
+            "position": "Ledamot",
+            "name": "Anton Dahlén"
+        },
+        {
+            "position": "Ledamot",
+            "name": "Valerio Molinari"
+        }
+    ]
+}
