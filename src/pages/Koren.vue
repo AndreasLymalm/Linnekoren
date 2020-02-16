@@ -15,7 +15,11 @@
         även som mål att med jämna mellanrum genomföra samarbeten med andra körer, gästartister, och ensembler för
         att tillsammans göra gemensamma konserter.
       </p>
-      <b-img-lazy :src="require('../assets/images/we-the-choir.jpg')" fluid />
+      <b-img 
+        v-if="showImage"
+        src="http://linnekoren.se/images/kören/we-the-choir.jpg" 
+        @error="showImage = false"
+        fluid />
       <p>
         Linnékören arbetar i projektform och därför sätts repertoaren inför varje projekt. Avsikten är att alla projekt skall utmynna
         i en konsert, ett framträdande, eller annan mindre sjungning. Repertoaren anpassas utifrån det projekt som
@@ -33,6 +37,11 @@
 <script>
   import MainLayout from '../layouts/Main.vue'
   export default {
+    data: function() {
+      return {
+        showImage: true
+      }
+    },
     components: {
       MainLayout
     }

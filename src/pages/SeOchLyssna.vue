@@ -8,9 +8,12 @@
       <heading title="Se och lyssna" />
 
       <b-container>
+        <video height="200px" controls>
+          <source src="http://linnekoren.se/videos/2016höst-där-du-andas.mp4" type="video/mp4">
+        </video>
         <b-row>
           <b-col md="3">
-            <b-img-lazy :src="require('../assets/images/posters/2014höst-bring-the-beat-in.jpg')" fluid />
+            <b-img-lazy src="http://linnekoren.se/images/posters/2014höst-bring-the-beat-in.jpg" fluid />
           </b-col>
           <b-col md="3">Inspelningarna skedde under Linnékörens konsert “Bring The Beat In!” på Palladium i Växjö den 5 november 2014. Medverkade gjorde även musiker från S:t Sigfrids Folkhögskola. Körledare var Frida Johansson.</b-col>
           <b-col md="6">
@@ -35,19 +38,19 @@
                   :music="{
                     title: 'Fin är du',
                     artist: 'Linnékören, Palladium Växjö, hösten 2014',
-                    src: require('../assets/audio/2014höst-fin-är-du.wav'),
+                    src: 'http://linnekoren.se/audio/2014höst-fin-är-du.wav',
                     pic: ''
                   }"
                   :list="[
                     {
                       title: 'Fin är du',
                       artist: 'Linnékören, Palladium Växjö, hösten 2014',
-                      src: require('../assets/audio/2014höst-fin-är-du.wav')
+                      src: 'http://linnekoren.se/audio/2014höst-fin-är-du.wav'
                     },
                     {
                       title: 'Torn',
                       artist: 'Linnékören, Palladium Växjö, hösten 2014',
-                      src: require('../assets/audio/2014höst-torn.wav')
+                      src: 'http://linnekoren.se/audio/2014höst-torn.wav'
                     }
                   ]"
                 />
@@ -75,9 +78,9 @@
     data: function () {
       return {
         images: [
-          'https://dummyimage.com/800/ffffff/000000',
-          'https://dummyimage.com/1600/ffffff/000000',
-          'https://dummyimage.com/1280/000000/ffffff',
+          'http://linnekoren.se/images/posters/2014höst-bring-the-beat-in.jpg',
+          'http://linnekoren.se/images/sponsorer/linnestudenterna.png',
+          'http://linnekoren.se/videos/2016höst-där-du-andas.mp4',
           'https://dummyimage.com/400/000000/ffffff',
         ],
         index: null

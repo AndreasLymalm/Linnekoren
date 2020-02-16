@@ -10,8 +10,9 @@
         </div>
         <div class="panel-body">
           <b-img
-            :src="'/images/körledare/' + kebabName + '.jpg'"
+            :src="'http://linnekoren.se/images/körledare/' + kebabName + '.jpg'"
             :alt="name"
+            @error="replaceImageByDefault"
             fluid
           />
           <div class="overlay" v-if="readMore">
@@ -37,6 +38,11 @@ export default {
     },
     readMore: {
         type: Boolean
+    }
+  },
+  methods: {
+    replaceImageByDefault(e) {
+      e.target.src = require('../assets/images/person-placeholder.png')
     }
   },
   computed: {

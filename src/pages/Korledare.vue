@@ -7,9 +7,10 @@
     <b-container class="main">
       <!-- Titel -->
       <div class="conductor-header">
-        <b-img-lazy
-          :src="'/images/körledare/' + template + '.jpg'"
+        <b-img
+          :src="'http://linnekoren.se/images/körledare/' + template + '.jpg'"
           :alt="name"
+          @error="replaceImageByDefault"
           fluid
         />
         <h3>
@@ -88,6 +89,9 @@ export default {
     }
   },
   methods: {
+    replaceImageByDefault(e) {
+      e.target.src = require('../assets/images/person-placeholder.png')
+    },
     isEven: function(index) {
       return index % 2 == 0
     }

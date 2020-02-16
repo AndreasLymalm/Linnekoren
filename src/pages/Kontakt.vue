@@ -12,9 +12,10 @@
         <b-row>
           <b-col sm="4">
             <figure>
-              <b-img-lazy
-                :src="'/images/körledare/' + kebabName(conductor) + '.jpg'"
+              <b-img
+                :src="'http://linnekoren.se/images/körledare/' + kebabName(conductor) + '.jpg'"
                 :alt="conductor"
+                @error="replaceImageByDefault"
                 fluid
               />
             </figure>
@@ -34,9 +35,11 @@
         <b-row>
           <b-col md="6" lg="7">
             <figure>
-              <b-img-lazy
-                src="/images/styrelse/board.jpg"
+              <b-img
+                v-if="showBoardImage"
+                src="http://linnekoren.se/images/styrelse/board.jpg"
                 alt="Bild på styrelsen"
+                @error="showBoardImage = false"
                 fluid
               />
             </figure>
@@ -51,9 +54,10 @@
         <b-row id="board-members">
           <b-col cols="6" sm="4" lg="2" v-for="(member, index) in board" :key="index">
             <figure>
-              <b-img-lazy
-                :src="'/images/styrelse/' + kebabName(member.name) + '.jpg'"
+              <b-img
+                :src="'http://linnekoren.se/images/styrelse/' + kebabName(member.name) + '.jpg'"
                 :alt="member.name"
+                @error="replaceImageByDefault"
                 fluid
               />
               <figcaption>
@@ -123,10 +127,14 @@
     data: function() {
       return {
         conductor: "",
-        board: []
+        board: [],
+        showBoardImage: true
       };
     },
     methods: {
+      replaceImageByDefault(e) {
+        e.target.src = require('../assets/images/person-placeholder.png')
+      },
       kebabName: function(name) {
         return kebabName(name)
       }

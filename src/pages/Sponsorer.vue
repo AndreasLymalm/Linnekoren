@@ -8,16 +8,32 @@
       <heading title="Sponsorer" />
       <b-row class="row">
         <b-col xs="10" sm="5" offset-sm="1">
-          <img :src="require('../assets/images/sponsorer/studieframjandet.png')" fluid alt="Studiefrämjandet" class="img-fluid"/>
+          <b-img
+            src="http://linnekoren.se/images/sponsorer/studieframjandet.png" 
+            alt="Studiefrämjandet" 
+            fluid 
+          />
         </b-col>
         <b-col xs="10" sm="5">
-          <img :src="require('../assets/images/sponsorer/kulturparken.png')" fluid alt="Kulturparken" class="img-fluid"/>
+          <b-img 
+            src="http://linnekoren.se/images/sponsorer/kulturparken.png" 
+            alt="Kulturparken" 
+            fluid 
+          />
         </b-col>
         <b-col xs="10" sm="5" offset-sm="1">
-          <img :src="require('../assets/images/sponsorer/linnestudenterna.png')" fluid alt="Linnéstudenterna" class="img-fluid"/>
+          <b-img 
+            src="http://linnekoren.se/images/sponsorer/linnestudenterna.png" 
+            alt="Linnéstudenterna" 
+            fluid 
+          />
         </b-col>
         <b-col xs="10" sm="5">
-          <img :src="require('../assets/images/sponsorer/inCampus.png')" fluid alt="inCampus" class="img-fluid"/>
+          <b-img 
+            src="http://linnekoren.se/images/sponsorer/inCampus.png" 
+            alt="inCampus" 
+            fluid 
+          />
         </b-col>
       </b-row>
     </b-container>
