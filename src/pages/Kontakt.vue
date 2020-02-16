@@ -20,7 +20,7 @@
               />
             </figure>
           </b-col>
-          <b-col sm="4" class="contact-entity">
+          <b-col sm="8" class="contact-entity">
             <p class="contact-name">{{ conductor }}</p>
             <p class="e-mail">korledare@linnekoren.se</p>
           </b-col>
@@ -44,7 +44,7 @@
               />
             </figure>
           </b-col>
-          <b-col md="5" class="contact-entity">
+          <b-col md="6" lg="5" class="contact-entity">
             <p class="contact-name">Vi i styrelsen</p>
             <p class="e-mail">styrelse@linnekoren.se</p>
           </b-col>
@@ -52,7 +52,7 @@
 
         <!-- Individual members -->
         <b-row id="board-members">
-          <b-col cols="6" sm="4" lg="2" v-for="(member, index) in board" :key="index">
+          <b-col cols="12" sm="6" md="4" lg="2" v-for="(member, index) in board" :key="index">
             <figure>
               <b-img
                 :src="'http://linnekoren.se/images/styrelse/' + kebabName(member.name) + '.jpg'"
@@ -61,7 +61,7 @@
                 fluid
               />
               <figcaption>
-                {{ member.name }}
+                {{ member.name }}<br />
                 <small>{{ member.position }}</small>
               </figcaption>
             </figure>
@@ -168,13 +168,13 @@
       padding-top: 1em;
 
       figure {
+        font-size: 20px;
         padding-bottom: 1em;
 
         small {
           display: inline-block;
-          padding: 2px;
+          padding: 2px 5px;
           border-radius: 5px;
-          font-size: 11px;
           background: map-get($color-defs, button-default);
           color: map-get($color-defs, button-default-text);
         }

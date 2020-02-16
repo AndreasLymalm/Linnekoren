@@ -12,11 +12,11 @@
           <source src="http://linnekoren.se/videos/2016höst-där-du-andas.mp4" type="video/mp4">
         </video>
         <b-row>
-          <b-col md="3">
-            <b-img-lazy src="http://linnekoren.se/images/posters/2014höst-bring-the-beat-in.jpg" fluid />
+          <b-col class="d-none d-sm-flex" sm="3" md="2" lg="3">
+            <b-img-lazy src="http://linnekoren.se/images/affischer/2014höst-bring-the-beat-in.jpg" fluid />
           </b-col>
-          <b-col md="3">Inspelningarna skedde under Linnékörens konsert “Bring The Beat In!” på Palladium i Växjö den 5 november 2014. Medverkade gjorde även musiker från S:t Sigfrids Folkhögskola. Körledare var Frida Johansson.</b-col>
-          <b-col md="6">
+          <b-col sm="9" md="10" lg="3">Inspelningarna skedde under Linnékörens konsert “Bring The Beat In!” på Palladium i Växjö den 5 november 2014. Medverkade gjorde även musiker från S:t Sigfrids Folkhögskola. Körledare var Frida Johansson.</b-col>
+          <b-col cols="12" lg="6">
             <b-row>
               <b-col>
                 <!-- Bilder -->
