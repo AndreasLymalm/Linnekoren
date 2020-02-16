@@ -152,6 +152,16 @@ a, a:hover {
   color: map-get($color-defs, body-text);
 }
 
+.external-link {
+  text-decoration: underline;
+  color: map-get($color, main);
+  
+}
+.external-link:hover {
+  background: map-get($color, main);
+  color: map-get($color, grey);
+}
+
 /* Remove list bullets */
 ul {
   list-style-type: none;
