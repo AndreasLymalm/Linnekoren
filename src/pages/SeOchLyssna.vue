@@ -67,7 +67,7 @@
 
       // Check JSON
       if (this.resources && Array.isArray(this.resources)) {
-        let base = 'http://linnekoren.se/'
+        let base = 'https://linnekoren.se/'
 
         for (let resourceIndex = 0; resourceIndex < this.resources.length; resourceIndex++) {
           let resource = this.resources[resourceIndex]

@@ -11,7 +11,7 @@
         </b-col>
 
         <!-- Affisch --> 
-        <b-col class="poster d-none d-sm-flex" sm="6" md="12">
+        <b-col class="d-none d-sm-flex" sm="6" md="12">
           <b-img-lazy class="poster" v-if="poster" :src="poster" fluid />
         </b-col>
 
@@ -24,23 +24,33 @@
         
         <!-- Videor -->
         <b-col>
-          <video 
-            class="video"
-            v-for="(video, i) in internalVideos" 
-            :key="i" 
-            height="200px" 
-            preload="metadata"
-            controls
-          >
-            <source :src="video.src" type="video/mp4">
-          </video>
-          <iframe 
-            class="video"
-            v-for="(video, i) in externalVideos" 
-            :key="i" 
-            height="200px" 
-            :src="video.src"
-          ></iframe>
+          <b-row>
+            <b-col 
+              v-for="(video, i) in internalVideos" 
+              :key="i" 
+              lg="6" xl="4"
+            >
+              <b-embed
+                class="video"
+                type="video"
+                :src="video.src"
+                allowfullscreen
+                controls
+              ></b-embed>
+            </b-col>
+            <b-col 
+              v-for="(video, i) in externalVideos" 
+              :key="i" 
+              lg="6" xl="4"
+            >
+              <b-embed 
+                class="video"
+                type="iframe"
+                :src="video.src"
+                allowfullscreen
+              ></b-embed>
+            </b-col>
+          </b-row>
         </b-col>
 
       </b-row>
@@ -133,20 +143,19 @@ export default {
   padding: 1em;
 }
 
-.poster {
-  border-radius: 5px;
-}
-
-.description {
+.description, .poster {
   background-color: map-get($color, bright);
   border: 2px solid map-get($color, grey);
   border-radius: 5px;
-  padding: 1em;
   margin-bottom: 5px;
 }
 
+.description {
+  padding: 1em;
+}
+
 .video {
-  margin: 5px 0px 0px 5px;
+  margin-top: 5px;
 }
 
 .image {
