@@ -35,9 +35,15 @@
       <div id="where">
         <heading title="Var finns vi?" />
         <p>
-          Vi håller till i F-huset på Linnéuniversitetet, i salen Hjertén. Den ligger till vänster förbi huvudingången, i korridoren
+          Vi håller till i F-huset på Linnéuniversitetet (<a class="external-link" href="https://lnu.se/mot-linneuniversitetet/karta/vaxjo/hus-f/">Karta här</a>), i salen Hjertén. Den ligger till vänster förbi huvudingången, i korridoren
           förbi första dörren. Där övar vi varje tisdag under terminens gång, från klockan 19 till 21. 
         </p>
+        <b-img 
+          v-if="showImage"
+          src="http://linnekoren.se/images/kören/F-huset.jpg" 
+          alt="F-huset"
+          @error="showImage = false"
+          fluid />
       </div>
     </b-container>
   </main-layout>
@@ -46,6 +52,11 @@
 <script>
   import MainLayout from '../layouts/Main.vue'
   export default {
+    data: function() {
+      return {
+        showImage: true
+      }
+    },
     components: {
       MainLayout
     }

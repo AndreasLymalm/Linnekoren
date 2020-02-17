@@ -1,0 +1,308 @@
+{
+    "history": [
+        {
+            "date": "2018-12-13", 
+            "place": "Utvandrarnas hus Växjö",
+            "poster": "",
+            "description": "Höstterminen 2018 lussade vi på Utvandrarnas hus.",
+            "images": [],
+            "audio": [],
+            "videos": [
+                {
+                    "src": "2018höst-vikingastaffan.mp4",
+                    "isExternal": false
+                }
+            ]
+        },
+        {
+            "date": "2018-05-27", 
+            "place": "Linnéuniversitetet",
+            "poster": "2018vår-true-colours.png",
+            "description": "Vårterminen 2018 hade vi temat \"True Colors\" (det märks på bilderna). Bilder och video är från våra körövningar. Vi hade en filmkväll då vi kollade på en musikal. En annan dag färgade vi egna tröjor. Gemenskapen är viktig i kören.",
+            "images": [
+                "2018-03-24_Kördag-IKEA-Salen/20180324_145901290_iOS.jpg",
+                "2018-03-24_Kördag-IKEA-Salen/IMG_9394.JPG",
+                "2018-03-24_Kördag-IKEA-Salen/IMG_9393.JPG",
+                "2018-03-24_Kördag-IKEA-Salen/IMG_9402.JPG",
+                "2018-03-24_Kördag-IKEA-Salen/IMG_9437.JPG",
+                "2018-03-24_Kördag-IKEA-Salen/IMG_9459.JPG",
+                "2018-03-24_Kördag-IKEA-Salen/IMG_9465.JPG",
+                "2018-03-24_Kördag-IKEA-Salen/IMG_9475.JPG",
+                "2018-03-24_Kördag-IKEA-Salen/20180324_173459400_iOS.jpg",
+                "2018-03-24_Kördag-IKEA-Salen/20180324_185411063_iOS.jpg",
+                "2018-03-24_Kördag-IKEA-Salen/20180324_191235130_iOS.jpg",
+                "2018-03-24_Kördag-IKEA-Salen/20180324_202809211_iOS.jpg",
+                "2018-05-05_Kördag-F-Huset/IMG_9486.JPG",
+                "2018-05-05_Kördag-F-Huset/IMG_9490.JPG",
+                "2018-05-05_Kördag-F-Huset/IMG_9492.JPG",
+                "2018-05-05_Kördag-F-Huset/IMG_9501.JPG",
+                "2018-05-05_Kördag-F-Huset/IMG_9503.JPG",
+                "2018-05-05_Kördag-F-Huset/IMG_9505.JPG",
+                "2018-05-05_Kördag-F-Huset/IMG_9509.JPG",
+                "2018-05-05_Kördag-F-Huset/IMG_9511.JPG",
+                "2018-05-05_Kördag-F-Huset/IMG_9513.JPG",
+                "2018-05-05_Kördag-F-Huset/IMG_9515.JPG",
+                "2018-05-05_Kördag-F-Huset/IMG_9520.JPG"
+            ],
+            "audio": [],
+            "videos": [
+                {
+                    "src": "2018vår-övning1.mp4",
+                    "isExternal": false
+                },
+                {
+                    "src": "2018vår-övning2.mp4",
+                    "isExternal": false
+                }
+            ]
+        },
+        {
+            "date": "2017-12-02", 
+            "place": "Utvandrarnas hus Växjö",
+            "poster": "2017höst-julkonsert.jpg",
+            "description": "Höstterminen 2017 hade vi återigen julkonsert i Utvandrarnas hus.",
+            "images": [
+                "2017-12-02_Utvandrarnas-hus/20171202_094855243_iOS.jpg",
+                "2017-12-02_Utvandrarnas-hus/20171202_102746244_iOS.jpg",
+                "2017-12-02_Utvandrarnas-hus/20171202_140257375_iOS.jpg",
+                "2017-12-02_Utvandrarnas-hus/20171202_143013625_iOS.jpg",
+                "2017-12-02_Utvandrarnas-hus/20171202_170118787_iOS.jpg"
+            ],
+            "audio": [],
+            "videos": [
+                {
+                    "src": "2017höst-förberedelser.mp4",
+                    "isExternal": false
+                },
+                {
+                    "src": "2017höst-sankta-lucia.mp4",
+                    "isExternal": false
+                },
+                {
+                    "src": "2017höst-pepparkaksgubbar.mp4",
+                    "isExternal": false
+                },
+                {
+                    "src": "2017höst-kom-nu-alla.mp4",
+                    "isExternal": false
+                }
+            ]
+        },
+        {
+            "date": "2017-05-30", 
+            "place": "IOGT-NTO Växjö",
+            "poster": "2017vår-born-this-way.jpg",
+            "description": "Vårterminen 2017 höll vi konserten \"Born this way\", där vi förespråkade olikheter, i IOGT-NTOs lokaler.",
+            "images": [
+                "2017-05-30_Born-this-way/20170530_5774.jpg",
+                "2017-05-30_Born-this-way/20170530_5775.jpg",
+                "2017-05-30_Born-this-way/20170530_5759.jpg",
+                "2017-05-30_Born-this-way/20170530_5785.jpg",
+                "2017-05-30_Born-this-way/20170530_5787.jpg",
+                "2017-05-30_Born-this-way/20170530_5758.jpg",
+                "2017-05-30_Born-this-way/20170530_5792.jpg"
+            ],
+            "audio": [],
+            "videos": []
+        },
+        {
+            "date": "2016-12-10", 
+            "place": "Hemmesjö kyrka",
+            "poster": "2016höst-anna-Lotta.jpg",
+            "description": "Höstterminen 2016 hade vi samarbete med en annan Växjökör, Blandad konfekt, för att tillsammans sjunga på turnékonserten \"Anna-Lottas jul\" i Hemmesjö kyrka, lite utanför Växjö.",
+            "images": [
+                "2016-12-10_Anna-Lotta/86694702_786620085192457_8247842525637771264_n.jpg",
+                "2016-12-10_Anna-Lotta/86857575_1013241212409619_3307401061626544128_n.jpg"
+            ],
+            "audio": [],
+            "videos": []
+        },
+        {
+            "date": "2016-12-04", 
+            "place": "Norrtullskolan Växjö",
+            "poster": "2016höst-glasklart.png",
+            "description": "Höstterminen 2016 samarbetade vi med Kulturparken Småland med temat glas. Konserten hölls på Norrtullskolan i Växjö.",
+            "images": [
+                "2016-12-04_Glasklart/15310939_10207929658545701_1465737694_o.jpg",
+                "2016-12-04_Glasklart/15369851_10207929658225693_482553188_o.jpg"
+            ],
+            "audio": [],
+            "videos": [
+                {
+                    "src": "2016höst-där-du-andas.mp4",
+                    "isExternal": false
+                },
+                {
+                    "src": "2016höst-koppången.mp4",
+                    "isExternal": false
+                }
+            ]
+        },
+        {
+            "date": "2016-11-30", 
+            "place": "Kulturparken Småland Växjö",
+            "poster": "",
+            "description": "Höstterminen 2016 hade vi konsert på Kulturparken Småland med temat glas, men senare även Lucia.",
+            "images": [
+                "2016-11_Kulturparken-Småland/IMG_0464.JPG.jpg",
+                "2016-11_Kulturparken-Småland/15387572_10207929673226068_2089277425_o.jpg",
+                "2016-11_Kulturparken-Småland/IMG_0515.JPG.jpg",
+                "2016-11_Kulturparken-Småland/IMG_0903.JPG.jpg",
+                "2016-11_Kulturparken-Småland/15387572_10207929673226068_2089277425_o.jpg",
+                "2016-11_Kulturparken-Småland/15387572_10207929673226068_2089277425_o.jpg",
+                "2016-11_Kulturparken-Småland/15387572_10207929673226068_2089277425_o.jpg",
+                "2016-11_Kulturparken-Småland/15387572_10207929673226068_2089277425_o.jpg",
+                "2016-11_Kulturparken-Småland/15387572_10207929673226068_2089277425_o.jpg"
+            ],
+            "audio": [],
+            "videos": [
+                {
+                    "src": "2016höst-teaser.mp4",
+                    "isExternal": false
+                }
+            ]
+        },
+        {
+            "date": "2016-05-14", 
+            "place": "Ljungskile",
+            "poster": "",
+            "description": "Vårterminen 2016 åkte vi upp till Ljungskile och hade kyrkokonsert för konfirmander. Vi fick även träffa en körinspiratör! Resten av terminen ägnade vi oss mycket åt flashmobs.",
+            "images": [
+                "2016-03_Vårsjungning/12919240_228226940865424_411062658_n.jpg",
+                "2016-05_Körhelg-Ljungskile/DSC_0355.JPG",
+                "2016-05_Körhelg-Ljungskile/DSC_0357.JPG",
+                "2016-05_Körhelg-Ljungskile/DSC_0358.JPG",
+                "2016-05_Körhelg-Ljungskile/DSC_0359.JPG",
+                "2016-05_Körhelg-Ljungskile/DSC_0362.JPG",
+                "2016-05_Körhelg-Ljungskile/DSC_0368.JPG",
+                "2016-05_Körhelg-Ljungskile/DSC_0373.JPG",
+                "2016-05_Körhelg-Ljungskile/DSC_0393.JPG",
+                "2016-05_Körhelg-Ljungskile/DSC_0404.JPG",
+                "2016-05_Körhelg-Ljungskile/DSC_0423.JPG",
+                "2016-05_Körhelg-Ljungskile/DSC_0437.JPG",
+                "2016-05_Körhelg-Ljungskile/DSC_0448.JPG",
+                "2016-05_Körhelg-Ljungskile/DSC_0456.JPG"
+            ],
+            "audio": [],
+            "videos": [
+                {
+                    "src": "2016vår-övning.mp4",
+                    "isExternal": false
+                },
+                {
+                    "src": "2016vår-flashmob1.mp4",
+                    "isExternal": false
+                },
+                {
+                    "src": "2016vår-flashmob2.mp4",
+                    "isExternal": false
+                }
+            ]
+        },
+        {
+            "date": "2015-09-25", 
+            "place": "Linnéuniversitetet",
+            "poster": "",
+            "description": "Höstterminen 2015 hölls en middag för astronauter på Linnéuniversitetet och vi fick äran att ge dem alla skön sång.",
+            "images": [
+                "2015-09_Astronautmiddag/astronaut1.jpg",
+                "2015-09_Astronautmiddag/astronaut2.jpg",
+                "2015-09_Astronautmiddag/astronaut4.jpg"
+            ],
+            "audio": [],
+            "videos": []
+        },
+        {
+            "date": "2015-05-31", 
+            "place": "Utvandrarnas hus Växjö",
+            "poster": "2015vår-disney.jpg",
+            "description": "Det här är två av låtarna från Linnékörens konsert \"Barnsligheter\" i Utvandrarnas hus i Växjö vårterminen 2015. Huvudtemat var Disney och vi sjöng fem hela härliga sånger samt ett medley.",
+            "images": [
+                "2015-04_Disneykonsert/disney1.jpg",
+                "2015-04_Disneykonsert/disney2.jpg"
+            ],
+            "audio": [
+                {
+                    "src": "2015vår-under-the-sea.mp3",
+                    "title": "Under the sea"
+                },
+                {
+                    "src": "2015vår-youll-be-in-my-heart.mp3",
+                    "title": "You'll be in my heart"
+                }
+            ],
+            "videos": []
+        },
+        {
+            "date": "2014-12-12", 
+            "place": "Linnéuniversitetet",
+            "poster": "",
+            "description": "Inför Lucia 2014 höll Linnékören sitt första lussefirande.",
+            "images": [
+                "2014-12-12_Lucia/IMG_3317.JPG",
+                "2014-12-12_Lucia/IMG_3318.JPG",
+                "2014-12-12_Lucia/IMG_3323.JPG",
+                "2014-12-12_Lucia/IMG_3336.JPG",
+                "2014-12-12_Lucia/IMG_3338.JPG"
+            ],
+            "audio": [],
+            "videos": []
+        },
+        {
+            "date": "2014-11-05", 
+            "place": "Palladium Växjö",
+            "poster": "2014höst-bring-the-beat-in.jpg",
+            "description": "Inspelningarna skedde under Linnékörens konsert \"Bring The Beat In!\" på Palladium i Växjö den 5 november 2014. Medverkade gjorde även musiker från S:t Sigfrids Folkhögskola.",
+            "images": [
+                "2014-10_Körhelg/Foto 2014-10-19 15 45 29.jpg",
+                "2014-11_Bring-the-beat-in-fotografens/IMG_6197.JPG",
+                "2014-11_Bring-the-beat-in-fotografens/IMG_6155.JPG",
+                "2014-11_Bring-the-beat-in-fotografens/IMG_6150.JPG"
+            ],
+            "audio": [
+                {
+                    "src": "2014höst-fin-är-du.wav",
+                    "title": "Fin är du" 
+                },
+                {
+                    "src": "2014höst-torn.wav",
+                    "title": "Torn"
+                },
+                {
+                    "src": "2014höst-happy.wav",
+                    "title": "Happy"
+                },
+                {
+                    "src": "2014höst-paradise.wav",
+                    "title": "Paradise"
+                },
+                {
+                    "src": "2014höst-africa.wav",
+                    "title": "Africa"
+                }
+            ],
+            "videos": []
+        },
+        {
+            "date": "2014-05-11", 
+            "place": "Malmö",
+            "poster": "2014vår-vivat-academia.png",
+            "description": "Inspelningarna är gjorda den 11 maj 2014 i Malmö vid Linnékören och Malmö Studentkörs gemensamma konsert \"Vivat Academia\".",
+            "images": [
+                "2014-05_Malmöresan/bild_1.jpg",
+                "2014-05_Malmöresan/20140511_154945.jpg"
+            ],
+            "audio": [],
+            "videos": [
+                {
+                    "src": "https://www.youtube.com/embed/cAt0zaJCxuI",
+                    "isExternal": true
+                },
+                {
+                    "src": "https://www.youtube.com/embed/DB9-TZIfNHw",
+                    "isExternal": true
+                }
+            ]
+        }
+    ]
+}

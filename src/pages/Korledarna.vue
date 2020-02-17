@@ -8,6 +8,11 @@
       <heading title="Körledarna" />
       <b-row>
 
+        <!-- Shu Tabira -->
+        <person-card 
+          name="Shu Tabira"
+          years="2020-nu" />
+
         <!-- Sofia Dahlén -->
         <person-card 
           name="Sofia Dahlén"
