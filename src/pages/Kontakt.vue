@@ -13,7 +13,7 @@
           <b-col sm="4">
             <figure>
               <b-img
-                :src="'http://linnekoren.se/images/körledare/' + kebabName(conductor) + '.jpg'"
+                :src="'https://linnekoren.se/images/körledare/' + kebabName(conductor) + '.jpg'"
                 :alt="conductor"
                 @error="replaceImageByDefault"
                 fluid
@@ -37,7 +37,7 @@
             <figure>
               <b-img
                 v-if="showBoardImage"
-                src="http://linnekoren.se/images/styrelse/board.jpg"
+                src="https://linnekoren.se/images/styrelse/board.jpg"
                 alt="Bild på styrelsen"
                 @error="showBoardImage = false"
                 fluid
@@ -55,7 +55,7 @@
           <b-col cols="12" sm="6" md="4" lg="2" v-for="(member, index) in board" :key="index">
             <figure>
               <b-img
-                :src="'http://linnekoren.se/images/styrelse/' + kebabName(member.name) + '.jpg'"
+                :src="'https://linnekoren.se/images/styrelse/' + kebabName(member.name) + '.jpg'"
                 :alt="member.name"
                 @error="replaceImageByDefault"
                 fluid

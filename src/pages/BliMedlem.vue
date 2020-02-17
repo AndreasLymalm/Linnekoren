@@ -40,7 +40,7 @@
         </p>
         <b-img 
           v-if="showImage"
-          src="http://linnekoren.se/images/kören/F-huset.jpg" 
+          src="https://linnekoren.se/images/kören/F-huset.jpg" 
           alt="F-huset"
           @error="showImage = false"
           fluid />

@@ -10,7 +10,7 @@
         </div>
         <div class="panel-body">
           <b-img
-            :src="'http://linnekoren.se/images/körledare/' + kebabName + '.jpg'"
+            :src="'https://linnekoren.se/images/körledare/' + kebabName + '.jpg'"
             :alt="name"
             @error="replaceImageByDefault"
             fluid

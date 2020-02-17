@@ -8,7 +8,7 @@
       <!-- Titel -->
       <div class="conductor-header">
         <b-img
-          :src="'http://linnekoren.se/images/körledare/' + template + '.jpg'"
+          :src="'https://linnekoren.se/images/körledare/' + template + '.jpg'"
           :alt="name"
           @error="replaceImageByDefault"
           fluid

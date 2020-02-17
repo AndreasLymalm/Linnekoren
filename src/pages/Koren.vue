@@ -17,7 +17,7 @@
       </p>
       <b-img 
         v-if="showImage"
-        src="http://linnekoren.se/images/kören/we-the-choir.jpg" 
+        src="https://linnekoren.se/images/kören/we-the-choir.jpg" 
         @error="showImage = false"
         fluid />
       <p>

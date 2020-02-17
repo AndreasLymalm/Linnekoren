@@ -9,28 +9,28 @@
       <b-row class="row">
         <b-col xs="10" sm="5" offset-sm="1">
           <b-img
-            src="http://linnekoren.se/images/sponsorer/studieframjandet.png" 
+            src="https://linnekoren.se/images/sponsorer/studieframjandet.png" 
             alt="Studiefrämjandet" 
             fluid 
           />
         </b-col>
         <b-col xs="10" sm="5">
           <b-img 
-            src="http://linnekoren.se/images/sponsorer/kulturparken.png" 
+            src="https://linnekoren.se/images/sponsorer/kulturparken.png" 
             alt="Kulturparken" 
             fluid 
           />
         </b-col>
         <b-col xs="10" sm="5" offset-sm="1">
           <b-img 
-            src="http://linnekoren.se/images/sponsorer/linnestudenterna.png" 
+            src="https://linnekoren.se/images/sponsorer/linnestudenterna.png" 
             alt="Linnéstudenterna" 
             fluid 
           />
         </b-col>
         <b-col xs="10" sm="5">
           <b-img 
-            src="http://linnekoren.se/images/sponsorer/inCampus.png" 
+            src="https://linnekoren.se/images/sponsorer/inCampus.png" 
             alt="inCampus" 
             fluid 
           />
