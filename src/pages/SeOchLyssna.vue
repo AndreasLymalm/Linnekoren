@@ -7,59 +7,26 @@
     <b-container class="main">
       <heading title="Se och lyssna" />
 
-      <b-container>
-        <video height="200px" controls>
-          <source src="http://linnekoren.se/videos/2016höst-där-du-andas.mp4" type="video/mp4">
-        </video>
-        <b-row>
-          <b-col class="d-none d-sm-flex" sm="3" md="2" lg="3">
-            <b-img-lazy src="http://linnekoren.se/images/affischer/2014höst-bring-the-beat-in.jpg" fluid />
-          </b-col>
-          <b-col sm="9" md="10" lg="3">Inspelningarna skedde under Linnékörens konsert “Bring The Beat In!” på Palladium i Växjö den 5 november 2014. Medverkade gjorde även musiker från S:t Sigfrids Folkhögskola. Körledare var Frida Johansson.</b-col>
-          <b-col cols="12" lg="6">
-            <b-row>
-              <b-col>
-                <!-- Bilder -->
-                <gallery :images="images" :index="index" @close="index = null"></gallery>
-                <div
-                  class="image"
-                  v-for="(image, imageIndex) in images"
-                  :key="imageIndex"
-                  @click="index = imageIndex"
-                  :style="{ backgroundImage: 'url(' + image + ')', width: '70px', height: '70px' }"
-                ></div>
-              </b-col>
-            </b-row>
-            <b-row>
-              <b-col>
-                <!-- Musikspelare -->
-                <aplayer 
-                  theme="#591845"
-                  :music="{
-                    title: 'Fin är du',
-                    artist: 'Linnékören, Palladium Växjö, hösten 2014',
-                    src: 'http://linnekoren.se/audio/2014höst-fin-är-du.wav',
-                    pic: ''
-                  }"
-                  :list="[
-                    {
-                      title: 'Fin är du',
-                      artist: 'Linnékören, Palladium Växjö, hösten 2014',
-                      src: 'http://linnekoren.se/audio/2014höst-fin-är-du.wav'
-                    },
-                    {
-                      title: 'Torn',
-                      artist: 'Linnékören, Palladium Växjö, hösten 2014',
-                      src: 'http://linnekoren.se/audio/2014höst-torn.wav'
-                    }
-                  ]"
-                />
-              </b-col>
-            </b-row>
-          </b-col>
-        </b-row>
-      </b-container>
+        <!-- List years -->
+        <ul class="year-selection">
+          <li 
+            v-for="(year, i) in activeYears" 
+            :key="i" 
+            :class="{ active: isActive(year) }"
+            @click="currentYear = year"
+          >{{ year }}</li>
+        </ul>
 
+        <!-- Media -->
+        <media v-for="(resource, i) in currentYearResources"
+          :key="i"
+          :id="i"
+          :poster="resource.poster"
+          :description="resource.description"
+          :images="resource.images"
+          :audio="resource.audio"
+          :videos="resource.videos"
+        />
 
     </b-container>
   </main-layout>
@@ -67,36 +34,120 @@
 
 <script>
   import MainLayout from '../layouts/Main.vue'
-  import aplayer from 'vue-aplayer'
-  import VueGallery from 'vue-gallery';
+  import Media from '../components/Media'
+  import json from "../data/se-och-lyssna.json";
   export default {
     components: {
       MainLayout,
-      aplayer,
-      'gallery': VueGallery
+      Media
     },
     data: function () {
       return {
-        images: [
-          'http://linnekoren.se/images/posters/2014höst-bring-the-beat-in.jpg',
-          'http://linnekoren.se/images/sponsorer/linnestudenterna.png',
-          'http://linnekoren.se/videos/2016höst-där-du-andas.mp4',
-          'https://dummyimage.com/400/000000/ffffff',
-        ],
-        index: null
+        resources: [],
+        activeYears: [],
+        currentYear: 0
       };
+    },
+    computed: {
+      currentYearResources: function() {
+        return this.resources.filter(r => {
+          let year = new Date(r.date).getFullYear()
+          
+          return year === this.currentYear
+        })
+      }
+    },
+    methods: {
+      isActive: function(year) {
+        return year == this.currentYear
+      }
+    },
+    created: function() {
+      this.resources = JSON.parse(JSON.stringify(json.history));
+
+      // Check JSON
+      if (this.resources && Array.isArray(this.resources)) {
+        let base = 'http://linnekoren.se/'
+
+        for (let resourceIndex = 0; resourceIndex < this.resources.length; resourceIndex++) {
+          let resource = this.resources[resourceIndex]
+
+          // Check key 'date'
+          if (resource.date) {
+            let year = new Date(resource.date).getFullYear()
+            if (!this.activeYears.includes(year))
+              this.activeYears.push(year)
+          }
+
+          // Check key 'poster'
+          if (resource.poster) {
+            resource.poster = base + 'images/affischer/' + resource.poster
+          }
+          // Check key 'images'
+          if (resource.images) {
+            if (Array.isArray(resource.images)) {
+              for (let i = 0; i < resource.images.length; i++) {
+                resource.images[i] = base + 'images/kören/' + resource.images[i]
+              }
+            }
+            else {
+              resource.images = []
+            }
+          }
+          // Check key 'audio'
+          if (resource.audio) { 
+            if (Array.isArray(resource.audio)) {
+              for (let i = 0; i < resource.audio.length; i++) {
+                if (!resource.audio[i].src) {
+                  resource.audio = []
+                  break
+                }
+                resource.audio[i].src = base + 'audio/' + resource.audio[i].src
+                resource.audio[i].artist = 'Linnékören, ' + resource.place + ', ' + resource.date
+              }
+            }
+            else {
+              resource.audio = []
+            }
+          }
+          // Check key 'videos'
+          if (resource.videos) {
+            if (Array.isArray(resource.videos)) {
+              for (let i = 0; i < resource.videos.length; i++) {
+                if (!resource.videos[i].src) {
+                  resource.videos = []
+                  break
+                }
+                if (!resource.videos[i].isExternal)
+                resource.videos[i].src = base + 'videos/' + resource.videos[i].src
+              }
+            }
+            else {
+              resource.videos = []
+            }
+          }
+        }
+      }
     }
   }
 </script>
 
 <style lang="scss" scoped>
 @import "../settings.scss";
-.image {
-    float: left;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    border: 1px solid #ebebeb;
+.year-selection {
+  padding: 0px;
+
+  & > li {
+    display: inline-block;
+    border: 1px solid map-get($color, grey);
+    border-radius: 5px;
+    padding: 5px 1em;
     margin: 5px;
+
+    &:hover, &.active {
+      background-color: map-get($color, lightgrey);
+      border-color: map-get($color, main);
+    } 
   }
+}
 </style>
