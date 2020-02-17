@@ -14,20 +14,19 @@
         <!-- Kalender -->
         <div id="calendar">
           <heading title="Kalender" />
-          <table class="table table-striped table-responsive">
-            <thead>
-              <th>Datum</th>
-              <th>Tid</th>
-              <th>Aktivitet</th>
-            </thead>
-            <tbody>
-              <tr class="passed-event">
-                <td class="date">Tisdagar</td>
-                <td class="time">19.00</td>
-                <td class="event">Körövning</td>
-              </tr>
-            </tbody>
-          </table>
+          <b-table 
+            :items="calendar" 
+            :fields="calendarHeaders"
+            head-variant="light"
+          >
+            <template v-slot:table-colgroup="scope">
+              <col
+                v-for="field in scope.fields"
+                :key="field.key"
+                :style="{ width: field.key === 'date' ? '120px' : false }"
+              >
+            </template>
+          </b-table>
         </div>
 
         <!-- På gång --> 
@@ -63,9 +62,32 @@
 
 <script>
   import MainLayout from '../layouts/Main.vue'
+  import json from "../data/kalender.json";
   export default {
     components: {
       MainLayout
+    },
+    data: function () {
+      return {
+        calendar: [],
+        calendarHeaders: [
+          {
+            key: 'date', 
+            label: 'Datum'
+          },
+          {
+            key: 'time', 
+            label: 'Tid'
+          },
+          {
+            key: 'description', 
+            label: 'Aktivitet'
+          }
+        ]
+      };
+    },
+    created: function() {
+      this.calendar = json.calendar;
     }
   }
 </script>
@@ -104,25 +126,6 @@
 
       #happenings {
         width: 49%;
-      }
-    }
-
-    // Calendar
-    #calendar {
-      table {
-        tr {
-          &.passed-event {
-            background: map-get($color, grey);
-          }
-
-          .date {
-            width: 50px;
-          }
-
-          .time {
-            width: 50px;
-          }
-        }
       }
     }
 
