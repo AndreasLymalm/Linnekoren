@@ -17,6 +17,7 @@
           <b-table 
             :items="calendar" 
             :fields="calendarHeaders"
+            sort-by="date"
             head-variant="light"
           >
             <template v-slot:table-colgroup="scope">
@@ -87,7 +88,21 @@
       };
     },
     created: function() {
-      this.calendar = json.calendar;
+      this.calendar = []
+      let allEntries = json.calendar;
+
+      if (Array.isArray(allEntries)) {
+        for (let i = 0; i < allEntries.length; i++) {
+          let now = new Date()
+          let entryDateTime = new Date(allEntries[i].date)
+          entryDateTime.setHours(23)
+          entryDateTime.setMinutes(59)
+
+          if (entryDateTime >= now) {
+            this.calendar.push(allEntries[i])
+          }
+        }
+      }
     }
   }
 </script>
