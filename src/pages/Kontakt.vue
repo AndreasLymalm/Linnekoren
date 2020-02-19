@@ -52,7 +52,7 @@
 
         <!-- Individual members -->
         <b-row id="board-members">
-          <b-col cols="12" sm="6" md="4" lg="2" v-for="(member, index) in board" :key="index">
+          <b-col cols="12" sm="6" md="4" lg="3" v-for="(member, index) in board" :key="index">
             <figure>
               <b-img
                 :src="'https://linnekoren.se/images/styrelse/' + kebabName(member.name) + '.jpg'"

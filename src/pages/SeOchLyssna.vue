@@ -45,7 +45,7 @@
       return {
         resources: [],
         activeYears: [],
-        currentYear: 0
+        currentYear: new Date().getFullYear()
       };
     },
     computed: {
@@ -103,7 +103,7 @@
                   break
                 }
                 resource.audio[i].src = base + 'audio/' + resource.audio[i].src
-                resource.audio[i].artist = 'Linnékören, ' + resource.place + ', ' + resource.date
+                resource.audio[i].artist = 'Linnékören'
               }
             }
             else {
@@ -127,6 +127,8 @@
             }
           }
         }
+
+        this.currentYear = Math.max(...this.activeYears)
       }
     }
   }

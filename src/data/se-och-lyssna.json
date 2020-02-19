@@ -1,11 +1,33 @@
 {
     "history": [
         {
+            "date": "2019-12-13", 
+            "place": "Kosta och Linnéuniversitetet",
+            "poster": "",
+            "description": "På Luciadagen 2019 fick vi lussa på många ställen. Redan klcokan 6 på morgonen lussade vi för Linnéuniversitetets studentradio RadioLur, vid lunchtid lussade vi genom universitetets huvudbyggnader, och på kvällen fick vi lussa på Kosta julmarknad.",
+            "images": [
+                "2019-12-13_Lucia/81124019_1971783049634341_1923587642809647104_o.jpg",
+                "2019-12-13_Lucia/80773712_2704174796367631_2982258430862950400_o.jpg",
+                "2019-12-13_Lucia/79770909_2704175023034275_2512545491519012864_o.jpg",
+                "2019-12-13_Lucia/79162040_2556603554423338_2126310837915222016_o.jpg",
+                "2019-12-13_Lucia/80517181_996613967363488_3089076750005567488_n.jpg"
+            ],
+            "audio": [],
+            "videos": [
+                {
+                    "src": "2019höst-lucia-på-lnu.mp4",
+                    "isExternal": false
+                }
+            ]
+        },
+        {
             "date": "2018-12-13", 
             "place": "Utvandrarnas hus Växjö",
-            "poster": "",
+            "poster": "2018höst-everyones-christmas.jpg",
             "description": "Höstterminen 2018 lussade vi på Utvandrarnas hus.",
-            "images": [],
+            "images": [
+                "2018-12-13_Lucia/47320947_414372165769568_7349914466345025536_n.jpg"
+            ],
             "audio": [],
             "videos": [
                 {
@@ -17,32 +39,32 @@
         {
             "date": "2018-05-27", 
             "place": "Linnéuniversitetet",
-            "poster": "2018vår-true-colours.png",
+            "poster": "2018vår-true-colours.jpg",
             "description": "Vårterminen 2018 hade vi temat \"True Colors\" (det märks på bilderna). Bilder och video är från våra körövningar. Vi hade en filmkväll då vi kollade på en musikal. En annan dag färgade vi egna tröjor. Gemenskapen är viktig i kören.",
             "images": [
                 "2018-03-24_Kördag-IKEA-Salen/20180324_145901290_iOS.jpg",
-                "2018-03-24_Kördag-IKEA-Salen/IMG_9394.JPG",
-                "2018-03-24_Kördag-IKEA-Salen/IMG_9393.JPG",
-                "2018-03-24_Kördag-IKEA-Salen/IMG_9402.JPG",
-                "2018-03-24_Kördag-IKEA-Salen/IMG_9437.JPG",
-                "2018-03-24_Kördag-IKEA-Salen/IMG_9459.JPG",
-                "2018-03-24_Kördag-IKEA-Salen/IMG_9465.JPG",
-                "2018-03-24_Kördag-IKEA-Salen/IMG_9475.JPG",
+                "2018-03-24_Kördag-IKEA-Salen/IMG_9394.jpg",
+                "2018-03-24_Kördag-IKEA-Salen/IMG_9393.jpg",
+                "2018-03-24_Kördag-IKEA-Salen/IMG_9402.jpg",
+                "2018-03-24_Kördag-IKEA-Salen/IMG_9437.jpg",
+                "2018-03-24_Kördag-IKEA-Salen/IMG_9459.jpg",
+                "2018-03-24_Kördag-IKEA-Salen/IMG_9465.jpg",
+                "2018-03-24_Kördag-IKEA-Salen/IMG_9475.jpg",
                 "2018-03-24_Kördag-IKEA-Salen/20180324_173459400_iOS.jpg",
                 "2018-03-24_Kördag-IKEA-Salen/20180324_185411063_iOS.jpg",
                 "2018-03-24_Kördag-IKEA-Salen/20180324_191235130_iOS.jpg",
                 "2018-03-24_Kördag-IKEA-Salen/20180324_202809211_iOS.jpg",
-                "2018-05-05_Kördag-F-Huset/IMG_9486.JPG",
-                "2018-05-05_Kördag-F-Huset/IMG_9490.JPG",
-                "2018-05-05_Kördag-F-Huset/IMG_9492.JPG",
-                "2018-05-05_Kördag-F-Huset/IMG_9501.JPG",
-                "2018-05-05_Kördag-F-Huset/IMG_9503.JPG",
-                "2018-05-05_Kördag-F-Huset/IMG_9505.JPG",
-                "2018-05-05_Kördag-F-Huset/IMG_9509.JPG",
-                "2018-05-05_Kördag-F-Huset/IMG_9511.JPG",
-                "2018-05-05_Kördag-F-Huset/IMG_9513.JPG",
-                "2018-05-05_Kördag-F-Huset/IMG_9515.JPG",
-                "2018-05-05_Kördag-F-Huset/IMG_9520.JPG"
+                "2018-05-05_Kördag-F-Huset/IMG_9486.jpg",
+                "2018-05-05_Kördag-F-Huset/IMG_9490.jpg",
+                "2018-05-05_Kördag-F-Huset/IMG_9492.jpg",
+                "2018-05-05_Kördag-F-Huset/IMG_9501.jpg",
+                "2018-05-05_Kördag-F-Huset/IMG_9503.jpg",
+                "2018-05-05_Kördag-F-Huset/IMG_9505.jpg",
+                "2018-05-05_Kördag-F-Huset/IMG_9509.jpg",
+                "2018-05-05_Kördag-F-Huset/IMG_9511.jpg",
+                "2018-05-05_Kördag-F-Huset/IMG_9513.jpg",
+                "2018-05-05_Kördag-F-Huset/IMG_9515.jpg",
+                "2018-05-05_Kördag-F-Huset/IMG_9520.jpg"
             ],
             "audio": [],
             "videos": [
@@ -120,7 +142,7 @@
         {
             "date": "2016-12-04", 
             "place": "Norrtullskolan Växjö",
-            "poster": "2016höst-glasklart.png",
+            "poster": "2016höst-glasklart.jpg",
             "description": "Höstterminen 2016 samarbetade vi med Kulturparken Småland med temat glas. Konserten hölls på Norrtullskolan i Växjö.",
             "images": [
                 "2016-12-04_Glasklart/15310939_10207929658545701_1465737694_o.jpg",
@@ -209,6 +231,20 @@
         },
         {
             "date": "2015-05-31", 
+            "place": "Trelleborg",
+            "poster": "2015vår-malmö.jpg",
+            "description": "I slutet av vårterminen tog vi med oss Disneytemat till Trelleborg och sjöng ihop oss med kören Cum Pane. På vägen hem kunde vi inte hålla oss och var tvugna att sjunga lite till!",
+            "images": [],
+            "audio": [],
+            "videos": [
+                {
+                    "src": "2015vår-circle-of-life.mp4",
+                    "isExternal": false
+                }
+            ]
+        },
+        {
+            "date": "2015-05-25", 
             "place": "Utvandrarnas hus Växjö",
             "poster": "2015vår-disney.jpg",
             "description": "Det här är två av låtarna från Linnékörens konsert \"Barnsligheter\" i Utvandrarnas hus i Växjö vårterminen 2015. Huvudtemat var Disney och vi sjöng fem hela härliga sånger samt ett medley.",
@@ -234,11 +270,11 @@
             "poster": "",
             "description": "Inför Lucia 2014 höll Linnékören sitt första lussefirande.",
             "images": [
-                "2014-12-12_Lucia/IMG_3317.JPG",
-                "2014-12-12_Lucia/IMG_3318.JPG",
-                "2014-12-12_Lucia/IMG_3323.JPG",
-                "2014-12-12_Lucia/IMG_3336.JPG",
-                "2014-12-12_Lucia/IMG_3338.JPG"
+                "2014-12-12_Lucia/IMG_3317.jpg",
+                "2014-12-12_Lucia/IMG_3318.jpg",
+                "2014-12-12_Lucia/IMG_3323.jpg",
+                "2014-12-12_Lucia/IMG_3336.jpg",
+                "2014-12-12_Lucia/IMG_3338.jpg"
             ],
             "audio": [],
             "videos": []
@@ -249,7 +285,7 @@
             "poster": "2014höst-bring-the-beat-in.jpg",
             "description": "Inspelningarna skedde under Linnékörens konsert \"Bring The Beat In!\" på Palladium i Växjö den 5 november 2014. Medverkade gjorde även musiker från S:t Sigfrids Folkhögskola.",
             "images": [
-                "2014-10_Körhelg/Foto 2014-10-19 15 45 29.jpg",
+                "2014-10_Körhelg/Foto2014-10-19_15-45-29.jpg",
                 "2014-11_Bring-the-beat-in-fotografens/IMG_6197.JPG",
                 "2014-11_Bring-the-beat-in-fotografens/IMG_6155.JPG",
                 "2014-11_Bring-the-beat-in-fotografens/IMG_6150.JPG"
@@ -281,7 +317,7 @@
         {
             "date": "2014-05-11", 
             "place": "Malmö",
-            "poster": "2014vår-vivat-academia.png",
+            "poster": "2014vår-vivat-academia.jpg",
             "description": "Inspelningarna är gjorda den 11 maj 2014 i Malmö vid Linnékören och Malmö Studentkörs gemensamma konsert \"Vivat Academia\".",
             "images": [
                 "2014-05_Malmöresan/bild_1.jpg",
