@@ -8,7 +8,7 @@
       <!-- Titel -->
       <div class="conductor-header">
         <b-img
-          :src="'https://linnekoren.se/images/körledare/' + template + '.jpg'"
+          :src="imageLink + template + '.jpg'"
           :alt="name"
           @error="replaceImageByDefault"
           fluid
@@ -63,6 +63,7 @@
 import MainLayout from "../layouts/Main.vue";
 import { hasArrayItems } from "../globalFunctions";
 import json from "../data/körledare.json";
+import links from "../data/länkar.json"
 export default {
   components: {
     MainLayout
@@ -74,7 +75,8 @@ export default {
       years: "",
       quote: [],
       questions: [],
-      musicalHistory: []
+      musicalHistory: [],
+      imageLink: ''
     };
   },
   computed: {
@@ -114,6 +116,9 @@ export default {
     else {
       window.location.href = '404';
     }
+
+    // Load image link
+    this.imageLink = links.conductors
   }
 };
 </script>

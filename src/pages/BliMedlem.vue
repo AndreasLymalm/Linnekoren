@@ -39,10 +39,8 @@
           förbi första dörren. Där övar vi varje tisdag under terminens gång, från klockan 19 till 21. 
         </p>
         <b-img 
-          v-if="showImage"
-          src="https://linnekoren.se/images/kören/F-huset.jpg" 
+          :src="require('../assets/images/F-huset.jpg')" 
           alt="F-huset"
-          @error="showImage = false"
           fluid />
       </div>
     </b-container>
@@ -52,11 +50,6 @@
 <script>
   import MainLayout from '../layouts/Main.vue'
   export default {
-    data: function() {
-      return {
-        showImage: true
-      }
-    },
     components: {
       MainLayout
     }

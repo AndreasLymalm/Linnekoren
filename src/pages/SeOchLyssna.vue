@@ -36,6 +36,7 @@
   import MainLayout from '../layouts/Main.vue'
   import Media from '../components/Media'
   import json from "../data/se-och-lyssna.json";
+  import links from "../data/länkar.json"
   export default {
     components: {
       MainLayout,
@@ -67,7 +68,6 @@
 
       // Check JSON
       if (this.resources && Array.isArray(this.resources)) {
-        let base = 'https://linnekoren.se/'
 
         for (let resourceIndex = 0; resourceIndex < this.resources.length; resourceIndex++) {
           let resource = this.resources[resourceIndex]
@@ -81,13 +81,13 @@
 
           // Check key 'poster'
           if (resource.poster) {
-            resource.poster = base + 'images/affischer/' + resource.poster
+            resource.poster = links.posters + resource.poster
           }
           // Check key 'images'
           if (resource.images) {
             if (Array.isArray(resource.images)) {
               for (let i = 0; i < resource.images.length; i++) {
-                resource.images[i] = base + 'images/kören/' + resource.images[i]
+                resource.images[i] = links.gallery + resource.images[i]
               }
             }
             else {
@@ -102,7 +102,7 @@
                   resource.audio = []
                   break
                 }
-                resource.audio[i].src = base + 'audio/' + resource.audio[i].src
+                resource.audio[i].src = links.audio + resource.audio[i].src
                 resource.audio[i].artist = 'Linnékören'
               }
             }
@@ -119,7 +119,7 @@
                   break
                 }
                 if (!resource.videos[i].isExternal)
-                resource.videos[i].src = base + 'videos/' + resource.videos[i].src
+                resource.videos[i].src = links.videos + resource.videos[i].src
               }
             }
             else {

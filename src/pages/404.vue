@@ -10,7 +10,7 @@
         :music="{
           title: 'Fin är du',
           artist: 'Linnékören',
-          src: 'http://linnekoren.se/audio/2014höst-fin-är-du.wav',
+          src: imageLink + '2014höst-fin-är-du.wav',
           pic: require('../assets/images/logo.png')
         }" />
     </b-container>
@@ -20,11 +20,20 @@
 <script>
   import MainLayout from '../layouts/Main.vue'
   import aplayer from 'vue-aplayer'
+  import links from "../data/länkar.json"
   export default {
     name: 'ErrorPage',
     components: {
       MainLayout,
       aplayer
+    },
+    data: function() {
+      return {
+        imageLink: ''
+      }
+    },
+    created: function() {
+      this.imageLink = links.audio;
     }
   }
 </script>

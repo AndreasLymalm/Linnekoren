@@ -17,7 +17,7 @@
       </p>
       <b-img 
         v-if="showImage"
-        src="https://linnekoren.se/images/kören/we-the-choir.jpg" 
+        :src="imageLink + 'we-the-choir.jpg'" 
         @error="showImage = false"
         fluid />
       <p>
@@ -36,14 +36,19 @@
 
 <script>
   import MainLayout from '../layouts/Main.vue'
+  import links from "../data/länkar.json"
   export default {
     data: function() {
       return {
-        showImage: true
+        showImage: true,
+        imageLink: ''
       }
     },
     components: {
       MainLayout
+    },
+    created: function() {
+      this.imageLink = links.gallery;
     }
   }
 </script>

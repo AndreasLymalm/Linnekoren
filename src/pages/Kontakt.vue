@@ -13,7 +13,7 @@
           <b-col sm="4">
             <figure>
               <b-img
-                :src="'https://linnekoren.se/images/körledare/' + kebabName(conductor) + '.jpg'"
+                :src="imageLinks.conductor + kebabName(conductor) + '.jpg'"
                 :alt="conductor"
                 @error="replaceImageByDefault"
                 fluid
@@ -37,7 +37,7 @@
             <figure>
               <b-img
                 v-if="showBoardImage"
-                src="https://linnekoren.se/images/styrelse/board.jpg"
+                :src="imageLinks.board + 'board.jpg'"
                 alt="Bild på styrelsen"
                 @error="showBoardImage = false"
                 fluid
@@ -55,7 +55,7 @@
           <b-col cols="12" sm="6" md="4" lg="3" v-for="(member, index) in board" :key="index">
             <figure>
               <b-img
-                :src="'https://linnekoren.se/images/styrelse/' + kebabName(member.name) + '.jpg'"
+                :src="imageLinks.board + kebabName(member.name) + '.jpg'"
                 :alt="member.name"
                 @error="replaceImageByDefault"
                 fluid
@@ -120,15 +120,17 @@
   import MainLayout from '../layouts/Main.vue'
   import { kebabName } from "../globalFunctions";
   import json from "../data/nuvarande-ledning.json";
+  import links from "../data/länkar.json"
   export default {
     components: {
       MainLayout
     },
     data: function() {
       return {
-        conductor: "",
+        conductor: '',
         board: [],
-        showBoardImage: true
+        showBoardImage: true,
+        imageLinks: ''
       };
     },
     methods: {
@@ -143,6 +145,7 @@
       // Load data
       this.conductor = json.conductor
       this.board = json.board
+      this.imageLinks = links
     }
   }
 </script>

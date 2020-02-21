@@ -10,7 +10,7 @@
         </div>
         <div class="panel-body">
           <b-img
-            :src="'https://linnekoren.se/images/körledare/' + kebabName + '.jpg'"
+            :src="imageLink + kebabName + '.jpg'"
             :alt="name"
             @error="replaceImageByDefault"
             fluid
@@ -26,6 +26,7 @@
 
 <script>
 import { kebabName } from "../globalFunctions";
+import links from "../data/länkar.json"
 export default {
   props: {
     name: {
@@ -49,6 +50,14 @@ export default {
     kebabName: function() {
       return kebabName(this.name)
     }
+  },
+  data: function() {
+    return {
+      imageLink: ""
+    }
+  },
+  created: function() {
+    this.imageLink = links.conductors;
   }
 };
 </script>
