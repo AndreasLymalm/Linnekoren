@@ -8,23 +8,23 @@
       <heading title="Körledarna" />
       <b-row>
 
-        <!-- Shu Tabira -->
         <person-card 
           name="Shu Tabira"
           years="2020-nu" />
 
-        <!-- Sofia Dahlén -->
+        <person-card 
+          name="Saga Fribyter"
+          years="2018" />
+
         <person-card 
           name="Sofia Dahlén"
           years="2017-2018" />
 
-        <!-- Frida Johansson -->
         <person-card 
           name="Frida Johansson"
           years="2014-2017" 
           readMore />
 
-        <!-- Magnus Järvelid -->
         <person-card 
           name="Magnus Järvelid"
           years="2013-2014"
